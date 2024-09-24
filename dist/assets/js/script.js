@@ -1,43 +1,79 @@
 document.addEventListener("DOMContentLoaded", function () {
-  changeVisibilityPasswordInput();
   sliderOption();
+  resetPasswordInput();
 });
 
-function changeVisibilityPasswordInput() {
-  var passwordInput = document.getElementById("password");
+function togglePasswordVisibility(element, inputId) {
+  const input = document.getElementById(inputId);
+  const showIcon = element.querySelector(".show-icon");
+  const hiddenIcon = element.querySelector(".hidden-icon");
 
-  var visibilityIcon = document.getElementsByClassName("visibility-icon")[0];
-
-  var showIcon = document.getElementsByClassName("show-icon")[0];
-  var hiddenIcon = document.getElementsByClassName("hidden-icon")[0];
-
-  visibilityIcon.addEventListener("click", function () {
-    var passwordInputType = passwordInput.getAttribute("type");
-
-    if (passwordInputType == "password") {
-      passwordInput.setAttribute("type", "text");
-      showIcon.toggleAttribute("hidden");
-      hiddenIcon.toggleAttribute("hidden");
-    } else {
-      passwordInput.setAttribute("type", "password");
-      showIcon.toggleAttribute("hidden");
-      hiddenIcon.toggleAttribute("hidden");
-    }
-  });
+  if (input.type === "password") {
+    // Show password
+    input.type = "text";
+    showIcon.hidden = true;
+    hiddenIcon.hidden = false;
+  } else {
+    // Hide password
+    input.type = "password";
+    showIcon.hidden = false;
+    hiddenIcon.hidden = true;
+  }
 }
 
 function sliderOption() {
   var splide = new Splide(".splide", {
-    type: "loop",
     fixedWidth: "100%",
     height: "100%",
     perPage: 1,
-
-    pagination: false,
+    autoplay: true,
+    pagination: true,
     arrows: false,
     perMove: 1,
     type: "fade",
+    rewind: true,
   });
 
   splide.mount();
+}
+
+function resetPasswordInput() {
+  const inputs = document.querySelectorAll('.reset-inputs input[type="text"]');
+
+  window.handleChange = function (input, index) {
+    const value = input.value.replace(/[^0-9]/g, ""); // Allow only digits
+    input.value = value; // Set the value in the current input
+    if (value && index < inputs.length - 1) {
+      inputs[index + 1].focus(); // Move to the next input
+    }
+  };
+
+  window.handleBackspace = function (event, index) {
+    if (event.key === "Backspace" && !event.currentTarget.value && index > 0) {
+      inputs[index - 1].focus(); // Move to the previous input
+    }
+  };
+}
+
+function openPopup(modalId) {
+  // Close all modals with class 'popup'
+  const popups = document.querySelectorAll(".popup");
+  popups.forEach((popup) => {
+    popup.classList.add("hidden"); // Add hidden class to close
+    popup.setAttribute("aria-hidden", "true"); // Update aria-hidden
+  });
+
+  // Open the target modal
+  const targetModal = document.getElementById(modalId);
+  if (targetModal) {
+    targetModal.classList.remove("hidden"); // Remove hidden class to show
+    targetModal.setAttribute("aria-hidden", "false"); // Update aria-hidden
+  }
+}
+function closePopup(modalId) {
+  const targetModal = document.getElementById(modalId);
+  if (targetModal) {
+    targetModal.classList.add("hidden"); // Add hidden class to show
+    targetModal.setAttribute("aria-hidden", "ture"); // Update aria-hidden
+  }
 }
