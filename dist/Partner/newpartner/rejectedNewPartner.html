@@ -41,7 +41,7 @@
     <!-- Css Files -->
     <link
       rel="stylesheet"
-      href="../assets/css/output.css"
+      href="../../assets/css/output.css"
     />
     <title>Aytamna Dashboard</title>
   </head>
@@ -66,7 +66,7 @@
           >
             <span class="sr-only">Toggle Navigation</span>
             <img
-              src="../assets/icons/menu.svg"
+              src="../../assets/icons/menu.svg"
               alt="menu Icon"
             />
           </button>
@@ -74,11 +74,11 @@
           <!-- Logo -->
           <a
             class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
-            href="main.html"
+            href="../main.html"
             aria-label="Preline"
           >
             <img
-              src="../assets/images/logo-dark.svg"
+              src="../../assets/images/logo-dark.svg"
               alt=""
               class="w-28"
             />
@@ -105,7 +105,7 @@
               class="size-[50px] relative inline-flex justify-center items-center gap-x-5 text-sm font-semibold rounded-full border border-transparent text-primary-400 bg-secondary-100 hover:bg-secondary-200 focus:outline-none focus:bg-secondary-100 disabled:opacity-50 disabled:pointer-events-none"
             >
               <img
-                src="../assets/icons/notification-bing.svg"
+                src="../../assets/icons/notification-bing.svg"
                 alt=""
               />
               <span class="sr-only">Notifications</span>
@@ -165,7 +165,7 @@
               aria-label="Preline"
             >
               <img
-                src="../assets/images/logo.svg"
+                src="../../assets/images/logo.svg"
                 alt=""
                 class="w-28"
               />
@@ -188,7 +188,7 @@
                     href="#"
                   >
                     <img
-                      src="../assets/icons/home.svg"
+                      src="../../assets/icons/home.svg"
                       alt="home Icon"
                       class=""
                     />
@@ -201,7 +201,7 @@
                     href="#"
                   >
                     <img
-                      src="../assets/icons/hand.svg"
+                      src="../../assets/icons/hand.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -214,7 +214,7 @@
                     href="#"
                   >
                     <img
-                      src="../assets/icons/wallet-add.svg"
+                      src="../../assets/icons/wallet-add.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -227,7 +227,7 @@
                     href="#"
                   >
                     <img
-                      src="../assets/icons/user-edit.svg"
+                      src="../../assets/icons/user-edit.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -240,7 +240,7 @@
                     href="#"
                   >
                     <img
-                      src="../assets/icons/Ads-click.svg"
+                      src="../../assets/icons/Ads-click.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -253,7 +253,7 @@
                     href="#"
                   >
                     <img
-                      src="../assets/icons/notification-bing-w.svg"
+                      src="../../assets/icons/notification-bing-w.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -271,7 +271,7 @@
               onclick="openPopup('logout-modal')"
             >
               <img
-                src="../assets/icons/logout.svg"
+                src="../../assets/icons/logout.svg"
                 alt="logout Icon"
                 class=""
               />
@@ -328,117 +328,44 @@
               </ol>
             </nav>
             <!-- End Breadcrumb -->
-
-            <div class="mt-5">
-              <form
-                action=""
-                method="post"
+            <div class="w-full h-full flex justify-center items-center mt-20">
+              <div
+                class="shadow-dasboardItem shadow-[#C2C2C2] rounded-lg p-8 sm:w-full sm:max-w-xl"
               >
                 <div
-                  class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"
+                  class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-danger-100"
                 >
-                  <div class="sm:col-span-3">
-                    <label
-                      for="partner-name"
-                      class="label"
-                      >اسم الشريك</label
-                    >
-                    <div class="mt-2">
-                      <input
-                        type="text"
-                        name="partner-name"
-                        id="partner-name"
-                        class="input"
-                      />
-                    </div>
-                  </div>
-                  <div class="sm:col-span-3">
-                    <label
-                      for="partner-type"
-                      class="label"
-                      >نوع الشراكة</label
-                    >
-                    <div class="mt-2">
-                      <input
-                        type="text"
-                        name="partner-type"
-                        id="partner-type"
-                        class="input"
-                      />
-                    </div>
-                  </div>
-                  <div class="sm:col-span-6">
-                    <label
-                      for="details"
-                      class="label"
-                      >قم بكتابة جميع التفاصيل الاضافية عن الشراكة
-                    </label>
-                    <div class="mt-2">
-                      <textarea
-                        id="details"
-                        name="details"
-                        rows="6"
-                        class="input"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div class="sm:col-span-6">
-                    <label
-                      for="add-files"
-                      class="label"
-                      >قم بارفاق المستندات والصور هنا</label
-                    >
-                    <label
-                      for="add-files"
-                      class="group mt-3 p-4 sm:p-7 block cursor-pointer text-center border-2 border-dashed border-gray-400 bg-grey-300 rounded-lg focus-within:outline-none focus-within:ring-2 focus-within:ring-black focus-within:ring-offset-2"
-                    >
-                      <input
-                        id="add-files"
-                        name="add-files"
-                        type="file"
-                        class="sr-only"
-                        multiple
-                      />
-                      <div
-                        class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary-100"
-                      >
-                        <img
-                          src="../assets/icons/document-upload.svg"
-                          alt="lock"
-                          class=""
-                        />
-                      </div>
-                      <span
-                        class="mt-2 block text-body text-black font-IBM font-bold"
-                      >
-                        اضغط هنا لارفاق المستندات
-                      </span>
-                      <span
-                        class="mt-1 block text-description text-black font-IBM font-normal"
-                      >
-                        قم بالضغط او سحب الملف وافلاتها في هذه الخانة لاضافة
-                        المستندات والصور
-                      </span>
-                    </label>
-                    <div class="flex flex-col mt-3 w-full">
-                      <div class="file-info-container"></div>
-                    </div>
-                  </div>
+                  <img
+                    src="../../assets/icons/rejected.svg"
+                    alt="lock"
+                    class=""
+                  />
                 </div>
-                <div class="flex justify-end items-center mt-5">
-                  <button
-                    class="btn-primary flex items-center justify-center gap-3 mx-2"
+                <div class="text-center mt-3">
+                  <h3 class="text-title text-black font-IBM font-bold">
+                    لقد تم رفض طلبك
+                  </h3>
+                  <p class="text-body text-black font-IBM font-normal">
+                    للاسف لقد تم رفض طلبكم ومرفق لكم سبب الرفض
+                  </p>
+                </div>
+                <div class="mt-10">
+                  <p class="text-badges text-black font-IBM font-normal">
+                    سبب الرفض .. سبب الرفض .. سبب الرفض .. سبب الرفض .. سبب
+                    الرفض .. سبب الرفض .. سبب الرفض .. سبب الرفض .. سبب الرفض ..
+                    سبب الرفض .. سبب الرفض .. سبب الرفض .. سبب الرفض .. سبب
+                    الرفض .. سبب الرفض .. سبب الرفض ..
+                  </p>
+                </div>
+                <div class="mt-5">
+                  <a
+                    href="addNewPartner.html"
+                    class="btn-primary w-full block"
                   >
-                    <span>
-                      <img
-                        src="../assets/icons/tick-circle.svg"
-                        alt=""
-                    /></span>
-                    اعتماد الطلب
-                  </button>
-                  <button class="btn-primary-secondary mx-2">تراجع</button>
+                    + تقديم طلب شراكة جديد</a
+                  >
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -485,7 +412,7 @@
                 class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-danger-100"
               >
                 <img
-                  src="../assets/icons/logout-red.svg"
+                  src="../../assets/icons/logout-red.svg"
                   alt="lock"
                   class=""
                 />
@@ -532,6 +459,6 @@
     <!-- preline JS  -->
     <script src="https://cdn.jsdelivr.net/npm/preline@2.4.1/dist/preline.min.js"></script>
     <!-- Custom JS -->
-    <script src="../assets/js/script.js"></script>
+    <script src="../../assets/js/script.js"></script>
   </body>
 </html>

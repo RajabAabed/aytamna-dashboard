@@ -41,7 +41,7 @@
     <!-- Css Files -->
     <link
       rel="stylesheet"
-      href="../assets/css/output.css"
+      href="../../assets/css/output.css"
     />
     <title>Aytamna Dashboard</title>
   </head>
@@ -66,7 +66,7 @@
           >
             <span class="sr-only">Toggle Navigation</span>
             <img
-              src="../assets/icons/menu.svg"
+              src="../../assets/icons/menu.svg"
               alt="menu Icon"
             />
           </button>
@@ -74,11 +74,11 @@
           <!-- Logo -->
           <a
             class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
-            href="main.html"
+            href="../main.html"
             aria-label="Preline"
           >
             <img
-              src="../assets/images/logo-dark.svg"
+              src="../../assets/images/logo-dark.svg"
               alt=""
               class="w-28"
             />
@@ -105,7 +105,7 @@
               class="size-[50px] relative inline-flex justify-center items-center gap-x-5 text-sm font-semibold rounded-full border border-transparent text-primary-400 bg-secondary-100 hover:bg-secondary-200 focus:outline-none focus:bg-secondary-100 disabled:opacity-50 disabled:pointer-events-none"
             >
               <img
-                src="../assets/icons/notification-bing.svg"
+                src="../../assets/icons/notification-bing.svg"
                 alt=""
               />
               <span class="sr-only">Notifications</span>
@@ -165,7 +165,7 @@
               aria-label="Preline"
             >
               <img
-                src="../assets/images/logo.svg"
+                src="../../assets/images/logo.svg"
                 alt=""
                 class="w-28"
               />
@@ -188,7 +188,7 @@
                     href="#"
                   >
                     <img
-                      src="../assets/icons/home.svg"
+                      src="../../assets/icons/home.svg"
                       alt="home Icon"
                       class=""
                     />
@@ -197,11 +197,11 @@
                 </li>
                 <li>
                   <a
-                    class="asideItem activeAsideItem"
+                    class="asideItem"
                     href="#"
                   >
                     <img
-                      src="../assets/icons/hand.svg"
+                      src="../../assets/icons/hand.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -210,11 +210,11 @@
                 </li>
                 <li>
                   <a
-                    class="asideItem"
+                    class="asideItem activeAsideItem"
                     href="#"
                   >
                     <img
-                      src="../assets/icons/wallet-add.svg"
+                      src="../../assets/icons/wallet-add.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -227,7 +227,7 @@
                     href="#"
                   >
                     <img
-                      src="../assets/icons/user-edit.svg"
+                      src="../../assets/icons/user-edit.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -240,7 +240,7 @@
                     href="#"
                   >
                     <img
-                      src="../assets/icons/Ads-click.svg"
+                      src="../../assets/icons/Ads-click.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -253,7 +253,7 @@
                     href="#"
                   >
                     <img
-                      src="../assets/icons/notification-bing-w.svg"
+                      src="../../assets/icons/notification-bing-w.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -271,7 +271,7 @@
               onclick="openPopup('logout-modal')"
             >
               <img
-                src="../assets/icons/logout.svg"
+                src="../../assets/icons/logout.svg"
                 alt="logout Icon"
                 class=""
               />
@@ -321,8 +321,27 @@
                       class="me-4 text-subTitle font-IBM font-normal text-black"
                       aria-current="page"
                     >
-                      تقديم طلب شراكة جديد</a
+                      ادارة بطاقات الخصم
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center">
+                    <svg
+                      class="h-5 w-5 flex-shrink-0 text-black"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      aria-hidden="true"
                     >
+                      <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                    </svg>
+                    <a
+                      href="#"
+                      class="me-4 text-subTitle font-IBM font-normal text-black"
+                      aria-current="page"
+                    >
+                      اصدار بطاقة خصم
+                    </a>
                   </div>
                 </li>
               </ol>
@@ -336,18 +355,18 @@
                   class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-alert-100"
                 >
                   <img
-                    src="../assets/icons/time.svg"
+                    src="../../assets/icons/time.svg"
                     alt="lock"
                     class=""
                   />
                 </div>
                 <div class="text-center mt-3">
                   <h3 class="text-title text-black font-IBM font-bold">
-                    تم بنجاح تقديم طلب الشراكة الخاص بكم!
+                    تم بنجاح تقديم طلب اصدار بطاقة الخصم الخاصة بكم!
                   </h3>
                   <p class="text-body text-black font-IBM font-normal">
-                    لقد قمنا بارسال طلبكم الشراكة الخاص بكم الى الادارة وسنقوم
-                    بالرد على طلبكم في اقرب وقت ممكن.
+                    لقد قمنا بارسال طلب اصدار بطاقة الخصم الخاص بكم الى الادارة
+                    وسنقوم بالرد على طلبكم في اقرب وقت ممكن.
                   </p>
                 </div>
                 <div class="flex flex-col mt-10 border-b border-b-[#E2E2E2]">
@@ -355,24 +374,50 @@
                     <p
                       class="flex-1 border-e border-e-[#E6E6E6] text-black text-description font-IBM font-normal text-start"
                     >
-                      اسم الشريك
+                      اسم البطاقة
                     </p>
                     <p
                       class="flex-1 text-black text-description font-IBM font-normal text-end"
                     >
-                      مطعم جدة
+                      خصم 20% على المنتجات الصيفية
                     </p>
                   </div>
                   <div class="flex justify-between items-center mb-4">
                     <p
                       class="flex-1 border-e border-e-[#E6E6E6] text-black text-description font-IBM font-normal text-start"
                     >
-                      تاريخ تقديم الطلب
+                      نسبة الخصم
                     </p>
                     <p
                       class="flex-1 text-black text-description font-IBM font-normal text-end"
                     >
-                      11 سبتمبر 2024
+                      20%
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center mb-4">
+                    <p
+                      class="flex-1 border-e border-e-[#E6E6E6] text-black text-description font-IBM font-normal text-start"
+                    >
+                      أماكن الخصم
+                    </p>
+                    <p class="flex-1 text-end">
+                      <span class="badge-primary">مطعم جدة 1</span>
+                      <span class="badge-primary">مطعم جدة 2</span>
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center mb-4">
+                    <p
+                      class="flex-1 border-e border-e-[#E6E6E6] text-black text-description font-IBM font-normal text-start"
+                    >
+                      منتجات الخصم
+                    </p>
+                    <p class="flex-1 text-end">
+                      <span class="badge-primary">وجبات لحم</span>
+                      <span class="badge-primary">وجبات تشيكن</span>
+                      <span class="badge-primary">وجبات لحم</span>
+                      <span class="badge-primary">وجبات تشيكن</span>
+                      <span class="badge-primary">وجبات لحم</span>
+                      <span class="badge-primary">وجبات تشيكن</span>
                     </p>
                   </div>
                   <div class="flex justify-between items-center mb-4">
@@ -388,7 +433,7 @@
                 </div>
                 <div class="mt-5">
                   <a
-                    href="main.html"
+                    href="../main.html"
                     class="btn-primary w-full block"
                     >العودة للرئيسية</a
                   >
@@ -446,7 +491,7 @@
                 class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-danger-100"
               >
                 <img
-                  src="../assets/icons/logout-red.svg"
+                  src="../../assets/icons/logout-red.svg"
                   alt="lock"
                   class=""
                 />
@@ -493,6 +538,6 @@
     <!-- preline JS  -->
     <script src="https://cdn.jsdelivr.net/npm/preline@2.4.1/dist/preline.min.js"></script>
     <!-- Custom JS -->
-    <script src="../assets/js/script.js"></script>
+    <script src="../../assets/js/script.js"></script>
   </body>
 </html>
