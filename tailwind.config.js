@@ -87,10 +87,11 @@ module.exports = {
         description: "14px",
         badges: "12px",
       },
-      dropShadow: {
-        modal: "0 0 2px 0 rgba(194, 194, 194,1)",
 
-        dasboard: "0 0 2px 0 rgba(0, 0, 0,0.25)",
+      boxShadow: {
+        modal: "0 0 2px 0 rgba(194, 194, 194,1)",
+        dasboard: "0 0 2px 0 rgba(0, 0, 0, 0.25)",
+        dasboardItem: "0 0 2px 0 ",
       },
     },
   },

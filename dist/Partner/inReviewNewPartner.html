@@ -184,7 +184,7 @@
               <ul class="flex flex-col space-y-2">
                 <li>
                   <a
-                    class="asideItem activeAsideItem"
+                    class="asideItem"
                     href="#"
                   >
                     <img
@@ -197,7 +197,7 @@
                 </li>
                 <li>
                   <a
-                    class="asideItem"
+                    class="asideItem activeAsideItem"
                     href="#"
                   >
                     <img
@@ -288,54 +288,117 @@
           <div
             class="p-4 sm:p-6 bg-white rounded-lg shadow-dasboard lg:min-h-[81vh] min-h-[80vh]"
           >
-            <div
-              class="flex w-full flex-col md:flex-row h-full items-stretch justify-center gap-5"
+            <!-- Breadcrumb -->
+            <nav
+              class="flex bg-grey-300 p-5 rounded-lg Breadcrumb"
+              aria-label="Breadcrumb"
             >
-              <div
-                class="flex flex-1 flex-col justify-between items-center shadow-dasboardItem shadow-[#4AB8D2] rounded-lg bg-secondary-100 p-7"
+              <ol
+                role="list"
+                class="flex items-center space-x-4"
               >
-                <div class="text-center">
-                  <h6 class="text-title font-bold font-IBM text-black">
-                    تقديم طلب شراكة جديد
-                  </h6>
-                  <p class="text-body font-normal font-IBM text-black mt-3">
-                    قم الان بتقديم طلب شراكة جديد مع منصة أيتامنا، بعد تقديم
-                    الطلب سنقوم بارسال بريد الكتروني تحتوي على الخاصة بالطلب
-                    الخاص بك.
+                <li>
+                  <div class="flex items-center">
+                    <a
+                      href="#"
+                      class="me-4 text-subTitle font-IBM font-normal text-black"
+                      >الرئيسية</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center">
+                    <svg
+                      class="h-5 w-5 flex-shrink-0 text-black"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      aria-hidden="true"
+                    >
+                      <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                    </svg>
+                    <a
+                      href="#"
+                      class="me-4 text-subTitle font-IBM font-normal text-black"
+                      aria-current="page"
+                    >
+                      تقديم طلب شراكة جديد</a
+                    >
+                  </div>
+                </li>
+              </ol>
+            </nav>
+            <!-- End Breadcrumb -->
+            <div class="w-full h-full flex justify-center items-center mt-20">
+              <div
+                class="shadow-dasboardItem shadow-[#C2C2C2] rounded-lg p-8 sm:w-full sm:max-w-xl"
+              >
+                <div
+                  class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-alert-100"
+                >
+                  <img
+                    src="../assets/icons/time.svg"
+                    alt="lock"
+                    class=""
+                  />
+                </div>
+                <div class="text-center mt-3">
+                  <h3 class="text-title text-black font-IBM font-bold">
+                    تم بنجاح تقديم طلب الشراكة الخاص بكم!
+                  </h3>
+                  <p class="text-body text-black font-IBM font-normal">
+                    لقد قمنا بارسال طلبكم الشراكة الخاص بكم الى الادارة وسنقوم
+                    بالرد على طلبكم في اقرب وقت ممكن.
                   </p>
                 </div>
-                <img
-                  src="../assets/images/new-partner.svg"
-                  alt="New Partner"
-                  class="w-4/5 my-2"
-                />
-                <a
-                  href="#"
-                  class="btn-primary w-full text-center"
-                  >+ تقديم طلب شراكة جديد</a
-                >
-              </div>
-              <div
-                class="flex flex-1 flex-col justify-between items-center shadow-dasboardItem shadow-[#85B56B] rounded-lg bg-[#F3F8F0] p-7"
-              >
-                <div class="text-center">
-                  <h6 class="text-title font-bold font-IBM text-black">
-                    ادارة معلومات حسابك
-                  </h6>
-                  <p class="text-body font-normal font-IBM text-black mt-3">
-                    بكل سهولة يمكنك إدارة معلومات حسابك وتحديثها في أي وقت.
+                <div class="flex flex-col mt-10 border-b border-b-[#E2E2E2]">
+                  <div class="flex justify-between items-center mb-4">
+                    <p
+                      class="flex-1 border-e border-e-[#E6E6E6] text-black text-description font-IBM font-normal text-start"
+                    >
+                      اسم الشريك
+                    </p>
+                    <p
+                      class="flex-1 text-black text-description font-IBM font-normal text-end"
+                    >
+                      مطعم جدة
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center mb-4">
+                    <p
+                      class="flex-1 border-e border-e-[#E6E6E6] text-black text-description font-IBM font-normal text-start"
+                    >
+                      تاريخ تقديم الطلب
+                    </p>
+                    <p
+                      class="flex-1 text-black text-description font-IBM font-normal text-end"
+                    >
+                      11 سبتمبر 2024
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center mb-4">
+                    <p
+                      class="flex-1 border-e border-e-[#E6E6E6] text-black text-description font-IBM font-normal text-start"
+                    >
+                      حالة الطلب
+                    </p>
+                    <p class="flex-1 text-end">
+                      <span class="badge-inReview">قيد المراجعة</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <a
+                    href="main.html"
+                    class="btn-primary w-full block"
+                    >العودة للرئيسية</a
+                  >
+                  <p
+                    class="mt-10 text-black font-IBM text-badges font-normal text-center"
+                  >
+                    في حال لم يتم الرد على طلبكم خلال 48 ساعة يمكنكم التواصل مع
+                    الدعم الفني.
                   </p>
                 </div>
-                <img
-                  src="../assets/images/profile-managment.svg"
-                  alt="Profile Managment"
-                  class="w-4/5 my-2"
-                />
-                <a
-                  href="#"
-                  class="btn-primary w-full text-center"
-                  >تحديث المعلومات الشخصية</a
-                >
               </div>
             </div>
           </div>

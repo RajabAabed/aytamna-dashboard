@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   sliderOption();
   resetPasswordInput();
+  addfiles();
 });
 
 function togglePasswordVisibility(element, inputId) {
@@ -22,19 +23,22 @@ function togglePasswordVisibility(element, inputId) {
 }
 
 function sliderOption() {
-  var splide = new Splide(".splide", {
-    fixedWidth: "100%",
-    height: "100%",
-    perPage: 1,
-    autoplay: true,
-    pagination: true,
-    arrows: false,
-    perMove: 1,
-    type: "fade",
-    rewind: true,
-  });
+  const splideElement = document.querySelector(".splide");
+  if (splideElement) {
+    var splide = new Splide(".splide", {
+      fixedWidth: "100%",
+      height: "100%",
+      perPage: 1,
+      autoplay: true,
+      pagination: true,
+      arrows: false,
+      perMove: 1,
+      type: "fade",
+      rewind: true,
+    });
 
-  splide.mount();
+    splide.mount();
+  }
 }
 
 function resetPasswordInput() {
@@ -76,4 +80,80 @@ function closePopup(modalId) {
     targetModal.classList.add("hidden"); // Add hidden class to show
     targetModal.setAttribute("aria-hidden", "ture"); // Update aria-hidden
   }
+}
+
+function addfiles() {
+  let fileList = []; // all images here
+
+  const fileInput = document.getElementById("add-files");
+  const fileInfoContainer = document.querySelector(".file-info-container");
+
+  fileInput.addEventListener("change", (event) => {
+    console.log("change");
+    const files = event.target.files;
+    fileList.push(...files);
+    fileInfoContainer.innerHTML = "";
+
+    for (const file of fileList) {
+      const fileInfo = document.createElement("div");
+      fileInfo.classList.add(
+        "flex",
+        "w-full",
+        "border-b",
+        "border-b-[#E6E6E6]",
+        "items-center",
+        "p-3",
+        "justify-start"
+      );
+
+      const fileThumbnail = document.createElement("img");
+      fileThumbnail.src = URL.createObjectURL(file);
+      fileThumbnail.classList.add("w-10", "h-10", "rounded-md", "object-cover");
+
+      const fileNameContainer = document.createElement("div");
+      fileNameContainer.classList.add("mx-3", "flex-1");
+
+      const fileNameHeader = document.createElement("h6");
+      fileNameHeader.textContent = "اسم الملف";
+      fileNameContainer.appendChild(fileNameHeader);
+
+      const fileNameParagraph = document.createElement("p");
+      fileNameParagraph.textContent = file.name;
+      fileNameContainer.appendChild(fileNameParagraph);
+
+      const fileSizeContainer = document.createElement("div");
+      fileSizeContainer.classList.add("flex-1", "text-center");
+
+      const fileSizeHeader = document.createElement("h6");
+      fileSizeHeader.textContent = "حجم الملف";
+      fileSizeContainer.appendChild(fileSizeHeader);
+
+      const fileSizeParagraph = document.createElement("p");
+      fileSizeParagraph.textContent =
+        (file.size / 1024 / 1024).toFixed(2) + " MB";
+      fileSizeContainer.appendChild(fileSizeParagraph);
+
+      const deleteButtonContainer = document.createElement("div");
+      deleteButtonContainer.classList.add("flex-1", "text-end");
+
+      const deleteButton = document.createElement("button");
+      deleteButton.classList.add("cursor-pointer");
+      deleteButtonContainer.appendChild(deleteButton);
+
+      const deleteButtonImage = document.createElement("img");
+      deleteButtonImage.src = "../assets/icons/trash.svg";
+      deleteButton.appendChild(deleteButtonImage);
+
+      deleteButton.addEventListener("click", () => {
+        fileInfo.remove();
+      });
+
+      fileInfo.appendChild(fileThumbnail);
+      fileInfo.appendChild(fileNameContainer);
+      fileInfo.appendChild(fileSizeContainer);
+      fileInfo.appendChild(deleteButtonContainer);
+
+      fileInfoContainer.appendChild(fileInfo);
+    }
+  });
 }
