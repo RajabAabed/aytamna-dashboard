@@ -87,7 +87,9 @@ function addfiles() {
 
   const fileInput = document.getElementById("add-files");
   const fileInfoContainer = document.querySelector(".file-info-container");
-
+  if (!fileInput) {
+    return;
+  }
   fileInput.addEventListener("change", (event) => {
     console.log("change");
     const files = event.target.files;
@@ -155,5 +157,28 @@ function addfiles() {
 
       fileInfoContainer.appendChild(fileInfo);
     }
+  });
+}
+
+function updateBadges(selectid) {
+  const select = document.getElementById(selectid);
+  if (!select) {
+    return;
+  }
+  const selectedOptions = Array.from(select.selectedOptions).map(
+    (option) => option.text
+  );
+
+  const parentSelect = select.parentElement;
+
+  const resultDiv = parentSelect.nextElementSibling;
+  console.log(resultDiv);
+  resultDiv.innerHTML = "";
+
+  selectedOptions.forEach((option) => {
+    const badge = document.createElement("span");
+    badge.classList.add("badge", "badge-primary", "mr-2", "mb-2");
+    badge.innerText = option;
+    resultDiv.appendChild(badge);
   });
 }

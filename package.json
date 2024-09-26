@@ -15,6 +15,7 @@
     "tailwindcss": "^3.4.12"
   },
   "dependencies": {
+    "@preline/select": "^2.5.0",
     "preline": "^2.5.0"
   }
 }

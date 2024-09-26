@@ -52,12 +52,12 @@
     >
       <nav class="px-4 sm:px-6 flex basis-full items-center w-full mx-auto">
         <div
-          class="me-5 lg:me-0 lg:hidden flex gap-3 justify-start items-center"
+          class="flex-1 me-5 lg:me-0 lg:hidden flex gap-3 justify-start items-center"
         >
           <!-- Navigation Toggle -->
           <button
             type="button"
-            class="h-10 w-28 flex justify-center items-center gap-x-2 border border-gray-200 rounded-lg focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
+            class="w-16 h-12 flex justify-center items-center gap-x-2 border border-gray-200 rounded-lg focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
             aria-haspopup="dialog"
             aria-expanded="false"
             aria-controls="hs-application-sidebar"
@@ -73,7 +73,7 @@
           <!-- End Navigation Toggle -->
           <!-- Logo -->
           <a
-            class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
+            class="flex-auto rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
             href="../main.html"
             aria-label="Preline"
           >
@@ -87,7 +87,7 @@
         </div>
 
         <div
-          class="w-full flex items-center justify-end ms-auto md:justify-between gap-x-1 md:gap-x-3"
+          class="w-full flex flex-1 lg:flex-auto items-center justify-end ms-auto md:justify-between gap-x-1 md:gap-x-3"
         >
           <div class="hidden md:block">
             <h4 class="text-h4 text-black font-IBM font-bold">
@@ -100,17 +100,69 @@
           </div>
 
           <div class="flex flex-row items-center justify-end gap-7">
-            <button
-              type="button"
-              class="size-[50px] relative inline-flex justify-center items-center gap-x-5 text-sm font-semibold rounded-full border border-transparent text-primary-400 bg-secondary-100 hover:bg-secondary-200 focus:outline-none focus:bg-secondary-100 disabled:opacity-50 disabled:pointer-events-none"
+            <div
+              class="hs-dropdown [--placement:bottom-right] relative inline-flex"
             >
-              <img
-                src="../../assets/icons/notification-bing.svg"
-                alt=""
-              />
-              <span class="sr-only">Notifications</span>
-            </button>
-
+              <button
+                id="hs-dropdown-notifications"
+                type="button"
+                class="size-[50px] relative inline-flex justify-center items-center gap-x-5 text-sm font-semibold rounded-full border border-transparent text-primary-400 bg-secondary-100 hover:bg-secondary-200 focus:outline-none focus:bg-secondary-100 disabled:opacity-50 disabled:pointer-events-none"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                aria-label="Dropdown"
+              >
+                <img
+                  src="../../assets/icons/notification-bing.svg"
+                  alt=""
+                />
+                <span class="sr-only">Notifications</span>
+              </button>
+              <div
+                class="hs-dropdown-menu dropdown-menu duration min-w-96"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="hs-dropdown-notifications"
+              >
+                <div class="py-1 space-y-0.5">
+                  <ul>
+                    <li class="hover:bg-secondary-100 p-4 rounded-lg mb-2">
+                      <div class="flex justify-between items-start">
+                        <div class="text-body font-bold font-IBM text-black">
+                          استكمال طلب الشراكة
+                        </div>
+                        <div
+                          class="text-description font-semibold font-IBM text-black"
+                        >
+                          11-09-2024
+                        </div>
+                      </div>
+                      <p
+                        class="text-black text-description font-IBM font-normal mt-2"
+                      >
+                        طلبك في انتظار إرفاق الوثائق.
+                      </p>
+                    </li>
+                    <li class="hover:bg-secondary-100 p-4 rounded-lg mb-2">
+                      <div class="flex justify-between items-start">
+                        <div class="text-body font-bold font-IBM text-black">
+                          استكمال طلب الشراكة
+                        </div>
+                        <div
+                          class="text-description font-semibold font-IBM text-black"
+                        >
+                          11-09-2024
+                        </div>
+                      </div>
+                      <p
+                        class="text-black text-description font-IBM font-normal mt-2"
+                      >
+                        طلبك في انتظار إرفاق الوثائق.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <!-- Dropdown -->
             <div
               class="hs-dropdown [--placement:bottom-right] relative inline-flex"
@@ -123,7 +175,7 @@
                 aria-expanded="false"
                 aria-label="Dropdown"
               >
-                <div class="text-end">
+                <div class="text-end hidden lg:block">
                   <p class="text-description text-black font-IBM font-bold">
                     ملك حمّاد
                   </p>
@@ -138,6 +190,34 @@
                   alt="Avatar"
                 />
               </button>
+              <div
+                class="hs-dropdown-menu dropdown-menu duration min-w-60"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="hs-dropdown-account"
+              >
+                <div class="py-3 px-5 bg-secondary-100 rounded-t-lg">
+                  <p class="text-description text-black font-IBM font-bold">
+                    ملك حمّاد
+                  </p>
+                  <span
+                    class="text-description text-black font-IBM font-normal mt-2"
+                    >رقم المستفيد #12345678</span
+                  >
+                </div>
+                <div class="py-1.5 space-y-0.5">
+                  <button
+                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-body text-black font-IBM font-bod hover:bg-secondary-100 focus:outline-none focus:bg-secondary-100"
+                    onclick="openPopup('logout-modal')"
+                  >
+                    <img
+                      src="../../assets/icons/logout.svg"
+                      alt="logout-icon"
+                    />
+                    تسجيل الخروج
+                  </button>
+                </div>
+              </div>
             </div>
             <!-- End Dropdown -->
           </div>
@@ -161,7 +241,7 @@
             <!-- Logo -->
             <a
               class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
-              href="#"
+              href="../main.html"
               aria-label="Preline"
             >
               <img
@@ -185,7 +265,7 @@
                 <li>
                   <a
                     class="asideItem"
-                    href="#"
+                    href="../main.html"
                   >
                     <img
                       src="../../assets/icons/home.svg"
@@ -198,7 +278,7 @@
                 <li>
                   <a
                     class="asideItem activeAsideItem"
-                    href="#"
+                    href="accepptedNewPartner.html"
                   >
                     <img
                       src="../../assets/icons/hand.svg"
@@ -211,7 +291,7 @@
                 <li>
                   <a
                     class="asideItem"
-                    href="#"
+                    href="../card/managmentCards.html"
                   >
                     <img
                       src="../../assets/icons/wallet-add.svg"
@@ -224,7 +304,7 @@
                 <li>
                   <a
                     class="asideItem"
-                    href="#"
+                    href="../information/managmentInfo.html"
                   >
                     <img
                       src="../../assets/icons/user-edit.svg"
@@ -237,7 +317,7 @@
                 <li>
                   <a
                     class="asideItem"
-                    href="#"
+                    href="../ads/ads.html"
                   >
                     <img
                       src="../../assets/icons/Ads-click.svg"
@@ -290,18 +370,18 @@
           >
             <!-- Breadcrumb -->
             <nav
-              class="flex bg-grey-300 p-5 rounded-lg Breadcrumb"
+              class="Breadcrumb"
               aria-label="Breadcrumb"
             >
               <ol
                 role="list"
-                class="flex items-center space-x-4"
+                class="flex items-center"
               >
                 <li>
                   <div class="flex items-center">
                     <a
-                      href="#"
-                      class="me-4 text-subTitle font-IBM font-normal text-black"
+                      href="../main.html"
+                      class="breadcrumbLink"
                       >الرئيسية</a
                     >
                   </div>
@@ -317,8 +397,8 @@
                       <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
                     </svg>
                     <a
-                      href="#"
-                      class="me-4 text-subTitle font-IBM font-normal text-black"
+                      href="addNewPartner.html"
+                      class="breadcrumbLink"
                       aria-current="page"
                     >
                       تقديم طلب شراكة جديد</a
@@ -328,28 +408,117 @@
               </ol>
             </nav>
             <!-- End Breadcrumb -->
-            <div class="w-full h-full flex justify-center items-center mt-20">
-              <div
-                class="shadow-dasboardItem shadow-[#C2C2C2] rounded-lg p-8 sm:w-full sm:max-w-xl"
+
+            <div class="mt-5">
+              <form
+                action=""
+                method="post"
               >
                 <div
-                  class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-success-100"
+                  class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"
                 >
-                  <img
-                    src="../../assets/icons/acceppted.svg"
-                    alt="lock"
-                    class=""
-                  />
+                  <div class="sm:col-span-3">
+                    <label
+                      for="partner-name"
+                      class="label"
+                      >اسم الشريك</label
+                    >
+                    <div class="mt-2">
+                      <input
+                        type="text"
+                        name="partner-name"
+                        id="partner-name"
+                        class="input"
+                      />
+                    </div>
+                  </div>
+                  <div class="sm:col-span-3">
+                    <label
+                      for="partner-type"
+                      class="label"
+                      >نوع الشراكة</label
+                    >
+                    <div class="mt-2">
+                      <input
+                        type="text"
+                        name="partner-type"
+                        id="partner-type"
+                        class="input"
+                      />
+                    </div>
+                  </div>
+                  <div class="sm:col-span-6">
+                    <label
+                      for="details"
+                      class="label"
+                      >قم بكتابة جميع التفاصيل الاضافية عن الشراكة
+                    </label>
+                    <div class="mt-2">
+                      <textarea
+                        id="details"
+                        name="details"
+                        rows="6"
+                        class="input"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="sm:col-span-6">
+                    <label
+                      for="add-files"
+                      class="label"
+                      >قم بارفاق المستندات والصور هنا</label
+                    >
+                    <label
+                      for="add-files"
+                      class="group mt-3 p-4 sm:p-7 block cursor-pointer text-center border-2 border-dashed border-gray-400 bg-grey-300 rounded-lg focus-within:outline-none focus-within:ring-2 focus-within:ring-black focus-within:ring-offset-2"
+                    >
+                      <input
+                        id="add-files"
+                        name="add-files"
+                        type="file"
+                        class="sr-only"
+                        multiple
+                      />
+                      <div
+                        class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary-100"
+                      >
+                        <img
+                          src="../../assets/icons/document-upload.svg"
+                          alt="lock"
+                          class=""
+                        />
+                      </div>
+                      <span
+                        class="mt-2 block text-body text-black font-IBM font-bold"
+                      >
+                        اضغط هنا لارفاق المستندات
+                      </span>
+                      <span
+                        class="mt-1 block text-description text-black font-IBM font-normal"
+                      >
+                        قم بالضغط او سحب الملف وافلاتها في هذه الخانة لاضافة
+                        المستندات والصور
+                      </span>
+                    </label>
+                    <div class="flex flex-col mt-3 w-full">
+                      <div class="file-info-container"></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="text-center mt-3">
-                  <h3 class="text-title text-black font-IBM font-bold">
-                    لقد تم قبول طلبك بنجاح!
-                  </h3>
-                  <p class="text-body text-black font-IBM font-normal">
-                    لقد تم قبول طلب الشراكة الخاص بكم من قبل الادارة.
-                  </p>
+                <div class="flex justify-end items-center mt-5">
+                  <button
+                    class="btn-primary flex items-center justify-center gap-3 mx-2"
+                  >
+                    <span>
+                      <img
+                        src="../../assets/icons/tick-circle.svg"
+                        alt=""
+                    /></span>
+                    اعتماد الطلب
+                  </button>
+                  <button class="btn-primary-secondary mx-2">تراجع</button>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
