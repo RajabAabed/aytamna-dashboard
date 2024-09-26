@@ -41,7 +41,7 @@
     <!-- Css Files -->
     <link
       rel="stylesheet"
-      href="../../assets/css/output.css"
+      href="../assets/css/output.css"
     />
     <title>Aytamna Dashboard</title>
   </head>
@@ -66,7 +66,7 @@
           >
             <span class="sr-only">Toggle Navigation</span>
             <img
-              src="../../assets/icons/menu.svg"
+              src="../assets/icons/menu.svg"
               alt="menu Icon"
             />
           </button>
@@ -78,7 +78,7 @@
             aria-label="aytamna"
           >
             <img
-              src="../../assets/images/logo-dark.svg"
+              src="../assets/images/logo-dark.svg"
               alt=""
               class="w-28"
             />
@@ -112,7 +112,7 @@
                 aria-label="Dropdown"
               >
                 <img
-                  src="../../assets/icons/notification-bing.svg"
+                  src="../assets/icons/notification-bing.svg"
                   alt=""
                 />
                 <span class="sr-only">Notifications</span>
@@ -211,7 +211,7 @@
                     onclick="openPopup('logout-modal')"
                   >
                     <img
-                      src="../../assets/icons/logout.svg"
+                      src="../assets/icons/logout.svg"
                       alt="logout-icon"
                     />
                     تسجيل الخروج
@@ -241,11 +241,11 @@
             <!-- Logo -->
             <a
               class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
-              href="../main.html"
+              href="main.html"
               aria-label="aytamna"
             >
               <img
-                src="../../assets/images/logo.svg"
+                src="../assets/images/logo.svg"
                 alt=""
                 class="w-28"
               />
@@ -264,80 +264,28 @@
               <ul class="flex flex-col space-y-2">
                 <li>
                   <a
-                    class="asideItem"
-                    href="../main.html"
+                    class="asideItem activeAsideItem"
+                    href="card/noCard.html"
                   >
                     <img
-                      src="../../assets/icons/home.svg"
+                      src="../assets/icons/cards.svg"
                       alt="home Icon"
                       class=""
                     />
-                    الصفحة الرئيسية
+                    بطاقات الخصم
                   </a>
                 </li>
                 <li>
                   <a
                     class="asideItem"
-                    href="../partner/addNewPartner.html"
+                    href="ads/ads.html"
                   >
                     <img
-                      src="../../assets/icons/hand.svg"
+                      src="../assets/icons/discount-shape.svg"
                       alt="hand Icon"
                       class=""
                     />
-                    تقديم طلب شراكة
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="asideItem"
-                    href="../card/managmentCards.html"
-                  >
-                    <img
-                      src="../../assets/icons/wallet-add.svg"
-                      alt="hand Icon"
-                      class=""
-                    />
-                    ادارة بطاقات الخصم
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="asideItem"
-                    href="../information/managmentInfo.html"
-                  >
-                    <img
-                      src="../../assets/icons/user-edit.svg"
-                      alt="hand Icon"
-                      class=""
-                    />
-                    إدارة معلوماتك
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="asideItem activeAsideItem"
-                    href="ads.html"
-                  >
-                    <img
-                      src="../../assets/icons/Ads-click.svg"
-                      alt="hand Icon"
-                      class=""
-                    />
-                    الإعلانات الترويجية
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="asideItem"
-                    href="#"
-                  >
-                    <img
-                      src="../../assets/icons/notification-bing-w.svg"
-                      alt="hand Icon"
-                      class=""
-                    />
-                    إرسال الإشعارات
+                    تالاعلانات الترويجية
                   </a>
                 </li>
               </ul>
@@ -351,7 +299,7 @@
               onclick="openPopup('logout-modal')"
             >
               <img
-                src="../../assets/icons/logout.svg"
+                src="../assets/icons/logout.svg"
                 alt="logout Icon"
                 class=""
               />
@@ -367,124 +315,7 @@
         <div class="p-4 sm:p-6 space-y-4 sm:space-y-6">
           <div
             class="p-4 sm:p-6 bg-white rounded-lg shadow-dasboard lg:min-h-[81vh] min-h-[80vh]"
-          >
-            <!-- Breadcrumb -->
-            <nav
-              class="Breadcrumb"
-              aria-label="Breadcrumb"
-            >
-              <ol
-                role="list"
-                class="flex items-center"
-              >
-                <li>
-                  <div class="flex items-center">
-                    <a
-                      href="../main.html"
-                      class="breadcrumbLink"
-                      >الرئيسية</a
-                    >
-                  </div>
-                </li>
-                <li>
-                  <div class="flex items-center">
-                    <svg
-                      class="h-5 w-5 flex-shrink-0 text-black"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      aria-hidden="true"
-                    >
-                      <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
-                    </svg>
-                    <a
-                      href="ads.html"
-                      class="breadcrumbLink"
-                      aria-current="page"
-                    >
-                      إدارة الاعلانات الترويجية
-                    </a>
-                  </div>
-                </li>
-              </ol>
-              <div>
-                <a
-                  href="addAds.html"
-                  class="btn-primary inline-block"
-                  >+ إنشاء إعلان جديد</a
-                >
-              </div>
-            </nav>
-            <!-- End Breadcrumb -->
-            <div class="mt-5">
-              <div class="mt-3">
-                <p class="text-subTitle font-bold font-IBM text-black">
-                  قائمة الإعلانات السابقة
-                </p>
-                <div class="flex flex-col mt-3">
-                  <div class="-m-1.5 overflow-x-auto">
-                    <div class="p-1.5 min-w-full inline-block align-middle">
-                      <div class="border rounded-lg overflow-hidden">
-                        <table class="min-w-full divide-y divide-[#F5F5F5]">
-                          <thead>
-                            <tr>
-                              <th
-                                scope="col"
-                                class="tableHeadItem"
-                              >
-                                اسم المكان
-                              </th>
-                              <th
-                                scope="col"
-                                class="tableHeadItem"
-                              >
-                                الفئة المستهدفة
-                              </th>
-                              <th
-                                scope="col"
-                                class="tableHeadItem text-end"
-                              >
-                                حالة الاعلان
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody class="divide-y divide-[#F5F5F5]">
-                            <tr>
-                              <td class="tableBodyItem">من 18 إلى 35 عاماً</td>
-                              <td class="tableBodyItem">
-                                تخفيضات على منتجات ABC
-                              </td>
-                              <td class="tableBodyItem text-end">
-                                <span class="badge-accepted">مقبولة</span>
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <td class="tableBodyItem">من 18 إلى 35 عاماً</td>
-                              <td class="tableBodyItem">
-                                تخفيضات على منتجات ABC
-                              </td>
-                              <td class="tableBodyItem text-end">
-                                <span class="badge-rejected">مرفوض</span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="tableBodyItem">من 18 إلى 35 عاماً</td>
-                              <td class="tableBodyItem">
-                                تخفيضات على منتجات ABC
-                              </td>
-                              <td class="tableBodyItem text-end">
-                                <span class="badge-inReview">قيد المراجعة</span>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          ></div>
         </div>
       </div>
       <!-- End Content -->
@@ -529,7 +360,7 @@
                 class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-danger-100"
               >
                 <img
-                  src="../../assets/icons/logout-red.svg"
+                  src="../assets/icons/logout-red.svg"
                   alt="lock"
                   class=""
                 />
@@ -576,6 +407,6 @@
     <!-- preline JS  -->
     <script src="https://cdn.jsdelivr.net/npm/preline@2.4.1/dist/preline.min.js"></script>
     <!-- Custom JS -->
-    <script src="../../assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
   </body>
 </html>
