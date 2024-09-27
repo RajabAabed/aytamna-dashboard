@@ -91,6 +91,9 @@
   .bg-gradient {
     @apply bg-gradient-to-t  to-[#85B56BB2] from-[#213B58B2] bg-opacity-70;
   }
+  .bg-gradient-bw {
+    @apply bg-gradient-to-t  to-[#00000010] from-[#00000090] bg-opacity-70;
+  }
   .splide__pagination {
     @apply justify-end bottom-6 right-5;
   }
