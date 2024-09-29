@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   sliderOption();
   resetPasswordInput();
   addfiles();
+  discountCard();
 });
 
 function togglePasswordVisibility(element, inputId) {
@@ -180,5 +181,23 @@ function updateBadges(selectid) {
     badge.classList.add("badge", "badge-primary", "mr-2", "mb-2");
     badge.innerText = option;
     resultDiv.appendChild(badge);
+  });
+}
+
+function discountCard() {
+  document.querySelectorAll(".card-button").forEach((button) => {
+    button.addEventListener("click", function () {
+      const cardViewQr = document.querySelector(".card-view .card-qr-code");
+      const cardViewPercentage = document.querySelector(
+        ".card-view .card-percentage"
+      );
+
+      const qrCodePath = this.getAttribute("qrCode-path");
+
+      const h4Content = this.querySelector(".badge span").textContent;
+
+      cardViewQr.setAttribute("src", qrCodePath);
+      cardViewPercentage.textContent = h4Content;
+    });
   });
 }
