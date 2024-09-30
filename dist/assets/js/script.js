@@ -185,19 +185,56 @@ function updateBadges(selectid) {
 }
 
 function discountCard() {
+  if (!document.querySelector(".card-button")) {
+    return;
+  }
   document.querySelectorAll(".card-button").forEach((button) => {
     button.addEventListener("click", function () {
       const cardViewQr = document.querySelector(".card-view .card-qr-code");
       const cardViewPercentage = document.querySelector(
         ".card-view .card-percentage"
       );
+      const cardMarketLogo = document.querySelector(
+        ".card-view .market-logo img"
+      );
 
       const qrCodePath = this.getAttribute("qrCode-path");
-
-      const h4Content = this.querySelector(".badge span").textContent;
+      const marketLogo = this.getAttribute("market-logo");
+      const h4Content = this.querySelector(".percentage").textContent;
 
       cardViewQr.setAttribute("src", qrCodePath);
       cardViewPercentage.textContent = h4Content;
+      cardMarketLogo.setAttribute("src", marketLogo);
+      if (cardMarketLogo.classList.contains("hidden")) {
+        cardMarketLogo.classList.remove("hidden");
+      }
     });
   });
+}
+
+function printCard() {
+  const divToPrint = document.getElementById("printableDiv");
+  const newWin = window.open("", "Print-Window");
+  newWin.document.open();
+  newWin.document.write(`
+      <html>
+        <head>
+          <link
+      rel="stylesheet"
+      href="../../assets/css/output.css"
+    />
+     <style>
+          body {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+          }
+        </style>
+        </head>
+        <body onload="window.print()">
+          ${divToPrint.outerHTML}
+        </body>
+      </html>
+    `);
+  newWin.document.close();
+  setTimeout(() => newWin.close(), 10);
 }
