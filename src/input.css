@@ -7,7 +7,7 @@
     @apply py-4 px-10  text-center text-body font-IBM rounded-lg transition-all duration-500 ease-in-out delay-150;
   }
   .btn-primary {
-    @apply btn bg-primary-400 text-white font-bold   hover:bg-primary-500 active:bg-primary-600  disabled:bg-primary-300;
+    @apply btn bg-[#87C756] text-white font-bold   hover:bg-primary-500 active:bg-primary-600  disabled:bg-primary-300;
   }
   .btn-primary-secondary {
     @apply btn bg-grey-100 border border-grey-500 text-black font-medium   hover:bg-grey-200 active:bg-grey-300 disabled:bg-grey-100;
@@ -115,4 +115,21 @@
   .select-option.selected {
     @apply bg-secondary-300;
   }
+}
+
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Regular.ttf");
+}
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-SemiBold.ttf");
+}
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Bold.ttf");
+}
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Light.ttf");
 }
