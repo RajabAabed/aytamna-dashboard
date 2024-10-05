@@ -68,7 +68,7 @@
     @apply me-1 lg:text-subTitle text-description font-IBM font-normal text-black;
   }
   .tableHeadItem {
-    @apply px-6 py-3 text-start text-body font-normal text-black font-IBM uppercase;
+    @apply px-6 py-3 text-start text-body font-semibold text-black font-IBM;
   }
   .tableBodyItem {
     @apply px-6 py-3 whitespace-nowrap text-body font-medium text-black font-IBM;
@@ -116,20 +116,28 @@
     @apply bg-secondary-300;
   }
 }
-
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Light.ttf");
+  font-weight: 300;
+}
 @font-face {
   font-family: "IBM Plex Sans Arabic";
   src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Medium.ttf");
+  font-weight: 500;
 }
 @font-face {
   font-family: "IBM Plex Sans Arabic";
   src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-SemiBold.ttf");
+  font-weight: 600;
 }
 @font-face {
   font-family: "IBM Plex Sans Arabic";
   src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Bold.ttf");
-}
-@font-face {
-  font-family: "IBM Plex Sans Arabic";
-  src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Light.ttf");
+  font-weight: 700;
 }

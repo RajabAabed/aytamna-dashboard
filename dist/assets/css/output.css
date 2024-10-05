@@ -1455,8 +1455,7 @@ body {
   text-align: start;
   font-family: IBM Plex Sans Arabic, sans-serif;
   font-size: 16px;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
@@ -1789,6 +1788,10 @@ body {
   display: inline-block;
 }
 
+.inline {
+  display: inline;
+}
+
 .\!flex {
   display: flex !important;
 }
@@ -1973,6 +1976,10 @@ body {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .min-w-60 {
@@ -2501,6 +2508,11 @@ body {
   padding-right: 0.75rem;
 }
 
+.px-3\.5 {
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2579,8 +2591,20 @@ body {
   padding-bottom: 1.5rem;
 }
 
+.pe-16 {
+  padding-inline-end: 4rem;
+}
+
+.pl-1\.5 {
+  padding-left: 0.375rem;
+}
+
 .pl-3 {
   padding-left: 0.75rem;
+}
+
+.pr-1\.5 {
+  padding-right: 0.375rem;
 }
 
 .pr-3 {
@@ -2603,12 +2627,32 @@ body {
   padding-inline-start: 1.25rem;
 }
 
+.ps-7 {
+  padding-inline-start: 1.75rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pe-\[70px\] {
+  padding-inline-end: 70px;
+}
+
+.pe-\[80px\] {
+  padding-inline-end: 80px;
+}
+
+.ps-8 {
+  padding-inline-start: 2rem;
+}
+
+.ps-9 {
+  padding-inline-start: 2.25rem;
 }
 
 .text-left {
@@ -2899,25 +2943,56 @@ body {
 @font-face {
   font-family: "IBM Plex Sans Arabic";
 
+  src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Light.ttf");
+
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+
   src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Regular.ttf");
+
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+
+  src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Medium.ttf");
+
+  font-weight: 500;
 }
 
 @font-face {
   font-family: "IBM Plex Sans Arabic";
 
   src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-SemiBold.ttf");
+
+  font-weight: 600;
 }
 
 @font-face {
   font-family: "IBM Plex Sans Arabic";
 
   src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Bold.ttf");
+
+  font-weight: 700;
 }
 
-@font-face {
-  font-family: "IBM Plex Sans Arabic";
+.odd\:bg-gray-50:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
 
-  src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Light.ttf");
+.odd\:bg-grey-300:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
+}
+
+.even\:bg-gray-50:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
 .focus-within\:outline-none:focus-within {
