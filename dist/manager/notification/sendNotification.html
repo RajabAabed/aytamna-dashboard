@@ -391,163 +391,247 @@
                     </a>
                   </div>
                 </li>
+                <li>
+                  <div class="flex items-center">
+                    <svg
+                      class="h-5 w-5 flex-shrink-0 text-black"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      aria-hidden="true"
+                    >
+                      <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                    </svg>
+                    <a
+                      href="sendNotification.html"
+                      class="breadcrumbLink"
+                      aria-current="page"
+                    >
+                      إرسال اشعار جديد
+                    </a>
+                  </div>
+                </li>
               </ol>
+              <div></div>
+            </nav>
+            <!-- End Breadcrumb -->
+            <div class="mt-5">
               <div>
                 <form
                   action=""
                   method="post"
-                  class="flex gap-2"
                 >
-                  <div class="relative mt-2 flex items-center">
-                    <input
-                      type="search"
-                      name="search"
-                      id="search"
-                      class="input bg-white ps-9 pe-[80px]"
-                    />
-                    <div class="absolute inset-y-0 right-0 flex py-1.5 pr-1.5">
-                      <img
-                        src="../../assets/icons/search-normal.svg"
-                        alt="serach icon"
-                        class="w-7"
-                      />
+                  <div
+                    class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"
+                  >
+                    <div class="sm:col-span-3">
+                      <label
+                        for="notification-title"
+                        class="label"
+                        >عنوان الاشعار
+                      </label>
+                      <div class="mt-2">
+                        <input
+                          type="text"
+                          name="notification-title"
+                          id="notification-title"
+                          class="input"
+                        />
+                      </div>
                     </div>
-                    <div class="absolute inset-y-0 left-0 flex py-1.5 pl-1.5">
-                      <button
-                        type="submit"
-                        class="btn-primary py-1 px-5"
+                    <div class="sm:col-span-3">
+                      <label
+                        for="recipients"
+                        class="label"
+                        >المستلمون</label
                       >
-                        بحث
-                      </button>
+                      <div class="mt-2">
+                        <select
+                          id="recipients"
+                          name="recipients"
+                          class="select-input py-4"
+                        >
+                          <option
+                            class="select-option"
+                            selected
+                            disabled
+                          >
+                            الشركاء / المستفيدين / الجميع
+                          </option>
+                          <option class="select-option">United States</option>
+                          <option class="select-option">Canada</option>
+                          <option class="select-option">Mexico</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="sm:col-span-3">
+                      <label
+                        for="notification-type"
+                        class="label"
+                        >نواع الاشعار</label
+                      >
+                      <div class="mt-2">
+                        <select
+                          id="notification-type"
+                          name="notification-type"
+                          class="select-input py-4"
+                        >
+                          <option
+                            class="select-option"
+                            selected
+                            disabled
+                          >
+                            نواع الاشعار
+                          </option>
+                          <option class="select-option">United States</option>
+                          <option class="select-option">Canada</option>
+                          <option class="select-option">Mexico</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="sm:col-span-3">
+                      <label
+                        for="target-group"
+                        class="label"
+                        >الفئة المستهدفة</label
+                      >
+                      <div class="mt-2">
+                        <select
+                          id="target-group"
+                          name="target-group"
+                          class="select-input py-4"
+                        >
+                          <option
+                            class="select-option"
+                            selected
+                            disabled
+                          >
+                            نواع الاشعار
+                          </option>
+                          <option class="select-option">United States</option>
+                          <option class="select-option">Canada</option>
+                          <option class="select-option">Mexico</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="sm:col-span-6">
+                      <label
+                        for="notification-content"
+                        class="label"
+                      >
+                        محتوى الاشعار
+                      </label>
+                      <div class="mt-2">
+                        <textarea
+                          id="notification-content"
+                          name="notification-content"
+                          rows="6"
+                          class="input"
+                        ></textarea>
+                      </div>
                     </div>
                   </div>
-                  <div class="relative mt-2 flex items-center">
-                    <select
-                      id="location"
-                      name="location"
-                      class="select-input py-4 bg-white"
-                      aria-placeholder="sdsdsdsd"
+                  <div class="flex justify-end items-center mt-5">
+                    <button
+                      class="btn-primary flex items-center justify-center gap-3 mx-2"
+                      type="submit"
                     >
-                      <option
-                        class="select-option"
-                        selected
-                      >
-                        حالة الاشعار
-                      </option>
-                      <option class="select-option">United States</option>
-                      <option class="select-option">Canada</option>
-                      <option class="select-option">Mexico</option>
-                    </select>
-                  </div>
-                  <div class="relative mt-2 flex items-center">
-                    <select
-                      id="location"
-                      name="location"
-                      class="select-input py-4 bg-white"
-                      aria-placeholder="sdsdsdsd"
+                      <span>
+                        <img
+                          src="../../assets/icons/notification-bing-outline.svg"
+                          alt=""
+                      /></span>
+                      ارسال الاشعار
+                    </button>
+                    <button
+                      class="btn-primary-secondary mx-2"
+                      type="button"
                     >
-                      <option
-                        class="select-option"
-                        selected
-                      >
-                        الفئة المستهدفة
-                      </option>
-                      <option class="select-option">United States</option>
-                      <option class="select-option">Canada</option>
-                      <option class="select-option">Mexico</option>
-                    </select>
+                      حفظ كمسودة
+                    </button>
                   </div>
                 </form>
               </div>
-            </nav>
-            <!-- End Breadcrumb -->
-            <div class="mt-5">
-              <div class="-m-1.5 overflow-x-auto">
-                <div class="p-1.5 min-w-full inline-block align-middle">
-                  <div class="overflow-hidden">
-                    <table class="min-w-full divide-y divide-[#F5F5F5]">
-                      <thead>
-                        <tr>
-                          <th
-                            scope="col"
-                            class="tableHeadItem"
-                          >
-                            عنوان الاشعار
-                          </th>
-                          <th
-                            scope="col"
-                            class="tableHeadItem"
-                          >
-                            الفئة المستهدفة
-                          </th>
-                          <th
-                            scope="col"
-                            class="tableHeadItem"
-                          >
-                            تاريخ الاشعار
-                          </th>
-                          <th
-                            scope="col"
-                            class="tableHeadItem"
-                          >
-                            عدد المستلمين
-                          </th>
-                          <th
-                            scope="col"
-                            class="tableHeadItem"
-                          >
-                            حالة الاشعار
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody class="divide-y divide-[#F5F5F5]">
-                        <tr class="odd:bg-grey-300">
-                          <td class="tableBodyItem">
-                            <p>تخفيضات على منتجات ABC</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <p>الشركاء</p>
-                          </td>
+              <div class="mt-10 rounded-lg p-2 border border-[#DBDADA]">
+                <div class="-m-1.5 overflow-x-auto">
+                  <div class="p-1.5 min-w-full inline-block align-middle">
+                    <div class="overflow-hidden">
+                      <table class="min-w-full divide-y divide-[#F5F5F5]">
+                        <thead>
+                          <tr>
+                            <th
+                              scope="col"
+                              class="tableHeadItem"
+                            >
+                              عنوان الاشعار
+                            </th>
+                            <th
+                              scope="col"
+                              class="tableHeadItem"
+                            >
+                              الفئة المستهدفة
+                            </th>
+                            <th
+                              scope="col"
+                              class="tableHeadItem"
+                            >
+                              تاريخ الاشعار
+                            </th>
+                            <th
+                              scope="col"
+                              class="tableHeadItem"
+                            >
+                              عدد المستلمين
+                            </th>
+                            <th
+                              scope="col"
+                              class="tableHeadItem"
+                            >
+                              حالة الاشعار
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="divide-y divide-[#F5F5F5]">
+                          <tr class="odd:bg-grey-300">
+                            <td class="tableBodyItem">
+                              <p>تخفيضات على منتجات ABC</p>
+                            </td>
+                            <td class="tableBodyItem">
+                              <p>الشركاء</p>
+                            </td>
 
-                          <td class="tableBodyItem">
-                            <p>19/09/2024</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <p>60 مشترك</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="badge-accepted">تم الارسال</span>
-                          </td>
-                        </tr>
-                        <tr class="odd:bg-grey-300">
-                          <td class="tableBodyItem">
-                            <p>ملك حماد</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <p>دعم خدمات</p>
-                          </td>
+                            <td class="tableBodyItem">
+                              <p>19/09/2024</p>
+                            </td>
+                            <td class="tableBodyItem">
+                              <p>60 مشترك</p>
+                            </td>
+                            <td class="tableBodyItem">
+                              <span class="badge-accepted">تم الارسال</span>
+                            </td>
+                          </tr>
+                          <tr class="odd:bg-grey-300">
+                            <td class="tableBodyItem">
+                              <p>ملك حماد</p>
+                            </td>
+                            <td class="tableBodyItem">
+                              <p>دعم خدمات</p>
+                            </td>
 
-                          <td class="tableBodyItem">
-                            <p>19/09/2024</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <p>60 مشترك</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="badge-inReview">مسودة</span>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                            <td class="tableBodyItem">
+                              <p>19/09/2024</p>
+                            </td>
+                            <td class="tableBodyItem">
+                              <p>60 مشترك</p>
+                            </td>
+                            <td class="tableBodyItem">
+                              <span class="badge-inReview">مسودة</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="mt-5 flex justify-end items-center">
-                <a
-                  href="sendNotification.html"
-                  class="btn-primary"
-                  >+ ارسال اشعار جديد</a
-                >
               </div>
             </div>
           </div>

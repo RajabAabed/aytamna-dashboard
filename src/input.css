@@ -115,6 +115,16 @@
   .select-option.selected {
     @apply bg-secondary-300;
   }
+  .pagination-item {
+    @apply relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-primary-200 focus:z-20 focus:outline-offset-0 md:inline-flex;
+  }
+  .pagination-item.active {
+    @apply text-white bg-primary-500 ring-primary-500 hover:bg-primary-700;
+  }
+  .select-input {
+    background-position: left 0.5rem center;
+    padding-left: 2.5rem;
+  }
 }
 @font-face {
   font-family: "IBM Plex Sans Arabic";
