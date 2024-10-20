@@ -214,7 +214,7 @@
             <!-- Logo -->
             <a
               class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
-              href="main.html"
+              href="../main.html"
               aria-label="aytamna"
             >
               <img
@@ -238,27 +238,92 @@
                 <li>
                   <a
                     class="asideItem"
-                    href="../card/noCard.html"
+                    href="../main.html"
                   >
                     <img
-                      src="../../assets/icons/cards.svg"
+                      src="../../assets/icons/home.svg"
                       alt="home Icon"
                       class=""
                     />
-                    بطاقات الخصم
+                    الصفحة الرئيسية
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="../partnerRequest/partnerRequest.html"
+                  >
+                    <img
+                      src="../../assets/icons/hand.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    طلبات الشراكة
                   </a>
                 </li>
                 <li>
                   <a
                     class="asideItem activeAsideItem"
-                    href="ads.html"
+                    href="currentPartner.html"
                   >
                     <img
-                      src="../../assets/icons/discount-shape.svg"
+                      src="../../assets/icons/menu-board.svg"
                       alt="hand Icon"
                       class=""
                     />
-                    الاعلانات الترويجية
+                    الشراكات الحالية
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="../managmentCard/managmentCard.html"
+                  >
+                    <img
+                      src="../../assets/icons/wallet-add.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    ادارة بطاقات الخصم
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="../issuedCard/issuedCard.html"
+                  >
+                    <img
+                      src="../../assets/icons/personalcard.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    بطاقات الخصم الصادرة
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="../notification/notification.html"
+                  >
+                    <img
+                      src="../../assets/icons/notification-bing-w.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    إرسال الإشعارات
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="../settings/setting.html"
+                  >
+                    <img
+                      src="../../assets/icons/setting-2.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    الإعدادات
                   </a>
                 </li>
               </ul>
@@ -318,15 +383,82 @@
                       <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
                     </svg>
                     <a
-                      href="ads.html"
+                      href="currentPartner.html"
                       class="breadcrumbLink"
                       aria-current="page"
                     >
-                      الاعلانات الترويجية
+                      الشراكات الحالية
                     </a>
                   </div>
                 </li>
               </ol>
+              <div>
+                <form
+                  action=""
+                  method="post"
+                  class="flex gap-2"
+                >
+                  <div class="relative mt-2 flex items-center">
+                    <input
+                      type="search"
+                      name="search"
+                      id="search"
+                      class="input bg-white ps-9 pe-[80px]"
+                    />
+                    <div class="absolute inset-y-0 right-0 flex py-1.5 pr-1.5">
+                      <img
+                        src="../../assets/icons/search-normal.svg"
+                        alt="serach icon"
+                        class="w-7"
+                      />
+                    </div>
+                    <div class="absolute inset-y-0 left-0 flex py-1.5 pl-1.5">
+                      <button
+                        type="submit"
+                        class="btn-primary py-1 px-5"
+                      >
+                        بحث
+                      </button>
+                    </div>
+                  </div>
+                  <div class="relative mt-2 flex items-center">
+                    <select
+                      id="location"
+                      name="location"
+                      class="select-input py-4 bg-white"
+                      aria-placeholder="sdsdsdsd"
+                    >
+                      <option
+                        class="select-option"
+                        selected
+                      >
+                        حالة الشراكة
+                      </option>
+                      <option class="select-option">United States</option>
+                      <option class="select-option">Canada</option>
+                      <option class="select-option">Mexico</option>
+                    </select>
+                  </div>
+                  <div class="relative mt-2 flex items-center">
+                    <select
+                      id="location"
+                      name="location"
+                      class="select-input py-4 bg-white"
+                      aria-placeholder="sdsdsdsd"
+                    >
+                      <option
+                        class="select-option"
+                        selected
+                      >
+                        نوع الشراكة
+                      </option>
+                      <option class="select-option">United States</option>
+                      <option class="select-option">Canada</option>
+                      <option class="select-option">Mexico</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
             </nav>
             <!-- End Breadcrumb -->
             <div class="mt-5">
@@ -334,109 +466,160 @@
                 <div class="p-1.5 min-w-full inline-block align-middle">
                   <div class="overflow-hidden">
                     <table class="min-w-full divide-y divide-[#F5F5F5]">
+                      <thead>
+                        <tr>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            #
+                          </th>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            اسم المستخدم
+                          </th>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            نوع الشراكة
+                          </th>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            تاريخ الطلب
+                          </th>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            حالة الطلب
+                          </th>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            تفاصيل الطلب
+                          </th>
+                        </tr>
+                      </thead>
                       <tbody class="divide-y divide-[#F5F5F5]">
-                        <tr>
+                        <tr class="odd:bg-grey-300">
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >عنوان الاعلان</span
-                            >
-                            <p>الاعلان رقم 1</p>
+                            <p>001</p>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ البداية</span
-                            >
-                            <p>01 سبتمبر 2024</p>
+                            <p>مطعم جدة</p>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ النهاية</span
-                            >
-                            <p>17 سبتمبر 2024</p>
+                            <p>دعم خدمات</p>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >نسبة الخصم</span
-                            >
-                            <p>%50</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >عنوان الاعلان</span
-                            >
-                            <p>الاعلان رقم 1</p>
+                            <p>19/09/2024</p>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ البداية</span
-                            >
-                            <p>01 سبتمبر 2024</p>
+                            <span class="badge-inReview">قيد المراجعة</span>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ النهاية</span
+                            <a
+                              href="showPartnerRequest.html"
+                              class="mx-1.5"
                             >
-                            <p>17 سبتمبر 2024</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >نسبة الخصم</span
-                            >
-                            <p>%50</p>
+                              <img
+                                src="../../assets/icons/eye.svg"
+                                alt="eye"
+                                class="inline"
+                              />
+                              عرض
+                            </a>
+                            <button class="mx-1.5">
+                              <img
+                                src="../../assets/icons/tick-circle-g.svg"
+                                alt="eye"
+                                class="inline"
+                              />
+                              قبول
+                            </button>
+                            <button class="mx-1.5">
+                              <img
+                                src="../../assets/icons/trash.svg"
+                                alt="eye"
+                                class="inline"
+                              />
+                              رفض
+                            </button>
                           </td>
                         </tr>
-                        <tr>
+                        <tr class="odd:bg-grey-300">
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >عنوان الاعلان</span
-                            >
-                            <p>الاعلان رقم 1</p>
+                            <p>002</p>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ البداية</span
-                            >
-                            <p>01 سبتمبر 2024</p>
+                            <p>مطعم جدة</p>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ النهاية</span
-                            >
-                            <p>17 سبتمبر 2024</p>
+                            <p>دعم خدمات</p>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >نسبة الخصم</span
+                            <p>19/09/2024</p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <span class="badge-accepted">نشطة </span>
+                          </td>
+                          <td class="tableBodyItem">
+                            <a
+                              href="showPartnerRequest.html"
+                              class="mx-1.5"
                             >
-                            <p>%50</p>
+                              <img
+                                src="../../assets/icons/eye.svg"
+                                alt="eye"
+                                class="inline"
+                              />
+                              عرض
+                            </a>
+
+                            <button class="mx-1.5">
+                              <img
+                                src="../../assets/icons/trash.svg"
+                                alt="eye"
+                                class="inline"
+                              />
+                              رفض
+                            </button>
                           </td>
                         </tr>
-                        <tr>
+                        <tr class="odd:bg-grey-300">
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >عنوان الاعلان</span
-                            >
-                            <p>الاعلان رقم 1</p>
+                            <p>003</p>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ البداية</span
-                            >
-                            <p>01 سبتمبر 2024</p>
+                            <p>مطعم جدة</p>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ النهاية</span
-                            >
-                            <p>17 سبتمبر 2024</p>
+                            <p>دعم خدمات</p>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >نسبة الخصم</span
+                            <p>19/09/2024</p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <span class="badge-rejected">منتهية</span>
+                          </td>
+                          <td class="tableBodyItem">
+                            <a
+                              href="showPartnerRequest.html"
+                              class="mx-1.5"
                             >
-                            <p>%50</p>
+                              <img
+                                src="../../assets/icons/eye.svg"
+                                alt="eye"
+                                class="inline"
+                              />
+                              عرض
+                            </a>
                           </td>
                         </tr>
                       </tbody>

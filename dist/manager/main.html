@@ -14,7 +14,7 @@
     <!-- Css Files -->
     <link
       rel="stylesheet"
-      href="../../assets/css/output.css"
+      href="../assets/css/output.css"
     />
     <title>Aytamna Dashboard</title>
   </head>
@@ -39,7 +39,7 @@
           >
             <span class="sr-only">Toggle Navigation</span>
             <img
-              src="../../assets/icons/menu.svg"
+              src="../assets/icons/menu.svg"
               alt="menu Icon"
             />
           </button>
@@ -47,11 +47,11 @@
           <!-- Logo -->
           <a
             class="flex-auto rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
-            href="../main.html"
+            href="main.html"
             aria-label="aytamna"
           >
             <img
-              src="../../assets/images/logo-dark.svg"
+              src="../assets/images/logo-dark.svg"
               alt=""
               class="w-28"
             />
@@ -85,7 +85,7 @@
                 aria-label="Dropdown"
               >
                 <img
-                  src="../../assets/icons/notification-bing.svg"
+                  src="../assets/icons/notification-bing.svg"
                   alt=""
                 />
                 <span class="sr-only">Notifications</span>
@@ -184,7 +184,7 @@
                     onclick="openPopup('logout-modal')"
                   >
                     <img
-                      src="../../assets/icons/logout.svg"
+                      src="../assets/icons/logout.svg"
                       alt="logout-icon"
                     />
                     تسجيل الخروج
@@ -218,7 +218,7 @@
               aria-label="aytamna"
             >
               <img
-                src="../../assets/images/logo.svg"
+                src="../assets/images/logo.svg"
                 alt=""
                 class="w-28"
               />
@@ -237,28 +237,93 @@
               <ul class="flex flex-col space-y-2">
                 <li>
                   <a
-                    class="asideItem"
-                    href="../card/noCard.html"
+                    class="asideItem activeAsideItem"
+                    href="main.html"
                   >
                     <img
-                      src="../../assets/icons/cards.svg"
+                      src="../assets/icons/home.svg"
                       alt="home Icon"
                       class=""
                     />
-                    بطاقات الخصم
+                    الصفحة الرئيسية
                   </a>
                 </li>
                 <li>
                   <a
-                    class="asideItem activeAsideItem"
-                    href="ads.html"
+                    class="asideItem"
+                    href="partnerRequest/partnerRequest.html"
                   >
                     <img
-                      src="../../assets/icons/discount-shape.svg"
+                      src="../assets/icons/hand.svg"
                       alt="hand Icon"
                       class=""
                     />
-                    الاعلانات الترويجية
+                    طلبات الشراكة
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="currentpartner/currentPartner.html"
+                  >
+                    <img
+                      src="../assets/icons/menu-board.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    الشراكات الحالية
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="managmentCard/managmentCard.html"
+                  >
+                    <img
+                      src="../assets/icons/wallet-add.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    ادارة بطاقات الخصم
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="issuedCard/issuedCard.html"
+                  >
+                    <img
+                      src="../assets/icons/personalcard.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    بطاقات الخصم الصادرة
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="notification/notification.html"
+                  >
+                    <img
+                      src="../assets/icons/notification-bing-w.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    إرسال الإشعارات
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="settings/setting.html"
+                  >
+                    <img
+                      src="../assets/icons/setting-2.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    الإعدادات
                   </a>
                 </li>
               </ul>
@@ -272,7 +337,7 @@
               onclick="openPopup('logout-modal')"
             >
               <img
-                src="../../assets/icons/logout.svg"
+                src="../assets/icons/logout.svg"
                 alt="logout Icon"
                 class=""
               />
@@ -288,164 +353,7 @@
         <div class="p-4 sm:p-6 space-y-4 sm:space-y-6">
           <div
             class="p-4 sm:p-6 bg-white rounded-lg shadow-dasboard lg:min-h-[81vh] min-h-[80vh]"
-          >
-            <!-- Breadcrumb -->
-            <nav
-              class="Breadcrumb"
-              aria-label="Breadcrumb"
-            >
-              <ol
-                role="list"
-                class="flex items-center"
-              >
-                <li>
-                  <div class="flex items-center">
-                    <a
-                      href="../main.html"
-                      class="breadcrumbLink"
-                      >الرئيسية</a
-                    >
-                  </div>
-                </li>
-                <li>
-                  <div class="flex items-center">
-                    <svg
-                      class="h-5 w-5 flex-shrink-0 text-black"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      aria-hidden="true"
-                    >
-                      <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
-                    </svg>
-                    <a
-                      href="ads.html"
-                      class="breadcrumbLink"
-                      aria-current="page"
-                    >
-                      الاعلانات الترويجية
-                    </a>
-                  </div>
-                </li>
-              </ol>
-            </nav>
-            <!-- End Breadcrumb -->
-            <div class="mt-5">
-              <div class="-m-1.5 overflow-x-auto">
-                <div class="p-1.5 min-w-full inline-block align-middle">
-                  <div class="overflow-hidden">
-                    <table class="min-w-full divide-y divide-[#F5F5F5]">
-                      <tbody class="divide-y divide-[#F5F5F5]">
-                        <tr>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >عنوان الاعلان</span
-                            >
-                            <p>الاعلان رقم 1</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ البداية</span
-                            >
-                            <p>01 سبتمبر 2024</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ النهاية</span
-                            >
-                            <p>17 سبتمبر 2024</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >نسبة الخصم</span
-                            >
-                            <p>%50</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >عنوان الاعلان</span
-                            >
-                            <p>الاعلان رقم 1</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ البداية</span
-                            >
-                            <p>01 سبتمبر 2024</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ النهاية</span
-                            >
-                            <p>17 سبتمبر 2024</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >نسبة الخصم</span
-                            >
-                            <p>%50</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >عنوان الاعلان</span
-                            >
-                            <p>الاعلان رقم 1</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ البداية</span
-                            >
-                            <p>01 سبتمبر 2024</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ النهاية</span
-                            >
-                            <p>17 سبتمبر 2024</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >نسبة الخصم</span
-                            >
-                            <p>%50</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >عنوان الاعلان</span
-                            >
-                            <p>الاعلان رقم 1</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ البداية</span
-                            >
-                            <p>01 سبتمبر 2024</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ النهاية</span
-                            >
-                            <p>17 سبتمبر 2024</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >نسبة الخصم</span
-                            >
-                            <p>%50</p>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          ></div>
         </div>
       </div>
       <!-- End Content -->
@@ -490,7 +398,7 @@
                 class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-danger-100"
               >
                 <img
-                  src="../../assets/icons/logout-red.svg"
+                  src="../assets/icons/logout-red.svg"
                   alt="lock"
                   class=""
                 />
@@ -533,8 +441,8 @@
     </div>
 
     <!-- preline JS  -->
-    <script src="../../assets/js/preline.min.js"></script>
+    <script src="../assets/js/preline.min.js"></script>
     <!-- Custom JS -->
-    <script src="../../assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
   </body>
 </html>

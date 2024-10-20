@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply py-4 px-10  text-center text-body font-IBM rounded-lg transition-all duration-500 ease-in-out delay-150;
+    @apply py-4 px-10  text-center sm:text-body text-description font-IBM rounded-lg transition-all duration-500 ease-in-out delay-150;
   }
   .btn-primary {
     @apply btn bg-[#87C756] text-white font-bold   hover:bg-primary-500 active:bg-primary-600  disabled:bg-primary-300;
@@ -68,10 +68,10 @@
     @apply me-1 lg:text-subTitle text-description font-IBM font-normal text-black;
   }
   .tableHeadItem {
-    @apply px-6 py-3 text-start text-body font-normal text-black font-IBM uppercase;
+    @apply px-6 py-3 text-start md:text-body text-description font-semibold text-black font-IBM;
   }
   .tableBodyItem {
-    @apply px-6 py-3 whitespace-nowrap text-body font-medium text-black font-IBM;
+    @apply px-6 py-3  md:text-body text-description font-medium text-black font-IBM;
   }
   .dropdown-menu {
     @apply transition-[opacity,margin]  hs-dropdown-open:opacity-100  opacity-0 hidden  bg-white shadow-dasboardItem shadow-[#00000025] rounded-lg mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full p-3;
@@ -115,8 +115,20 @@
   .select-option.selected {
     @apply bg-secondary-300;
   }
+<<<<<<< HEAD
   .alert {
     @apply absolute top-5 left-5 z-50;
+=======
+  .pagination-item {
+    @apply relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-primary-200 focus:z-20 focus:outline-offset-0 md:inline-flex;
+  }
+  .pagination-item.active {
+    @apply text-white bg-primary-500 ring-primary-500 hover:bg-primary-700;
+  }
+  .select-input {
+    background-position: left 0.5rem center;
+    padding-left: 2.5rem;
+>>>>>>> b1b0022027cac0046cb5da161c21091b1a259d65
   }
 }
 @font-face {

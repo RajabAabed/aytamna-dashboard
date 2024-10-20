@@ -238,27 +238,79 @@
                 <li>
                   <a
                     class="asideItem"
-                    href="../card/noCard.html"
+                    href="../main.html"
                   >
                     <img
-                      src="../../assets/icons/cards.svg"
+                      src="../../assets/icons/home.svg"
                       alt="home Icon"
                       class=""
                     />
-                    بطاقات الخصم
+                    الصفحة الرئيسية
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="../Beneficiary Management/beneficiary-management.html"
+                  >
+                    <img
+                      src="../../assets/icons/profile-2user.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    إدارة المستفيدين
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="../Partner Management/Partner-Management.html"
+                  >
+                    <img
+                      src="../../assets/icons/hand.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    إدارة الشركاء
                   </a>
                 </li>
                 <li>
                   <a
                     class="asideItem activeAsideItem"
-                    href="ads.html"
+                    href="Ads-Management.html"
                   >
                     <img
-                      src="../../assets/icons/discount-shape.svg"
+                      src="../../assets/icons/Ads-click.svg"
                       alt="hand Icon"
                       class=""
                     />
-                    الاعلانات الترويجية
+                    إدارة الإعلانات الترويجية
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="../Partnership Requests/Partnership-Requests.html"
+                  >
+                    <img
+                      src="../../assets/icons/menu-board.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    طلبات الشراكة
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="../Notifications/Notifications.html"
+                  >
+                    <img
+                      src="../../assets/icons/notification-bing-w.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    إرسال الإشعارات
                   </a>
                 </li>
               </ul>
@@ -318,15 +370,23 @@
                       <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
                     </svg>
                     <a
-                      href="ads.html"
+                      href="Partnership-Requests.html"
                       class="breadcrumbLink"
                       aria-current="page"
                     >
-                      الاعلانات الترويجية
+                      إدارة الاعلانات الترويجية
                     </a>
                   </div>
                 </li>
               </ol>
+              <div>
+                <a
+                  href="add-Ads.html"
+                  class="btn-primary inline-block"
+                >
+                  إنشاء إعلان جديد
+                </a>
+              </div>
             </nav>
             <!-- End Breadcrumb -->
             <div class="mt-5">
@@ -334,109 +394,79 @@
                 <div class="p-1.5 min-w-full inline-block align-middle">
                   <div class="overflow-hidden">
                     <table class="min-w-full divide-y divide-[#F5F5F5]">
+                      <thead>
+                        <tr>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            #
+                          </th>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            اسم الاعلان
+                          </th>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            الفئة المستهدفة
+                          </th>
+
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            حالة الطلب
+                          </th>
+                        </tr>
+                      </thead>
                       <tbody class="divide-y divide-[#F5F5F5]">
-                        <tr>
+                        <tr class="odd:bg-grey-300">
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >عنوان الاعلان</span
-                            >
-                            <p>الاعلان رقم 1</p>
+                            <p>001</p>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ البداية</span
-                            >
-                            <p>01 سبتمبر 2024</p>
+                            <p>تخفيضات على منتجات ABC</p>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ النهاية</span
-                            >
-                            <p>17 سبتمبر 2024</p>
+                            <p>من 18 إلى 35 عاماً</p>
                           </td>
+
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >نسبة الخصم</span
-                            >
-                            <p>%50</p>
+                            <span class="badge-inReview">قيد المراجعة</span>
                           </td>
                         </tr>
-                        <tr>
+                        <tr class="odd:bg-grey-300">
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >عنوان الاعلان</span
-                            >
-                            <p>الاعلان رقم 1</p>
+                            <p>001</p>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ البداية</span
-                            >
-                            <p>01 سبتمبر 2024</p>
+                            <p>تخفيضات على منتجات ABC</p>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ النهاية</span
-                            >
-                            <p>17 سبتمبر 2024</p>
+                            <p>من 18 إلى 35 عاماً</p>
                           </td>
+
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >نسبة الخصم</span
-                            >
-                            <p>%50</p>
+                            <span class="badge-inReview">قيد المراجعة</span>
                           </td>
                         </tr>
-                        <tr>
+                        <tr class="odd:bg-grey-300">
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >عنوان الاعلان</span
-                            >
-                            <p>الاعلان رقم 1</p>
+                            <p>001</p>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ البداية</span
-                            >
-                            <p>01 سبتمبر 2024</p>
+                            <p>تخفيضات على منتجات ABC</p>
                           </td>
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ النهاية</span
-                            >
-                            <p>17 سبتمبر 2024</p>
+                            <p>من 18 إلى 35 عاماً</p>
                           </td>
+
                           <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >نسبة الخصم</span
-                            >
-                            <p>%50</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >عنوان الاعلان</span
-                            >
-                            <p>الاعلان رقم 1</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ البداية</span
-                            >
-                            <p>01 سبتمبر 2024</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >تاريخ النهاية</span
-                            >
-                            <p>17 سبتمبر 2024</p>
-                          </td>
-                          <td class="tableBodyItem">
-                            <span class="text-description font-normal"
-                              >نسبة الخصم</span
-                            >
-                            <p>%50</p>
+                            <span class="badge-inReview">قيد المراجعة</span>
                           </td>
                         </tr>
                       </tbody>

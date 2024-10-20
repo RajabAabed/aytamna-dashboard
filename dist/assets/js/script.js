@@ -144,7 +144,7 @@ function addfiles() {
       deleteButtonContainer.appendChild(deleteButton);
 
       const deleteButtonImage = document.createElement("img");
-      deleteButtonImage.src = "../assets/icons/trash.svg";
+      deleteButtonImage.src = "../../assets/icons/trash.svg";
       deleteButton.appendChild(deleteButtonImage);
 
       deleteButton.addEventListener("click", () => {
@@ -200,8 +200,12 @@ function discountCard() {
 
       const qrCodePath = this.getAttribute("qrCode-path");
       const marketLogo = this.getAttribute("market-logo");
-      const h4Content = this.querySelector(".percentage").textContent;
-
+      let h4Content = "";
+      if (this.querySelector(".percentage")) {
+        h4Content = this.querySelector(".percentage").textContent;
+      } else {
+        h4Content = this.getAttribute("percentage");
+      }
       cardViewQr.setAttribute("src", qrCodePath);
       cardViewPercentage.textContent = h4Content;
       cardMarketLogo.setAttribute("src", marketLogo);
