@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html
+  lang="ar"
+  dir="rtl"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Responsive Email</title>
+    <style type="text/css">
+      @media screen and (max-width: 600px) {
+        .container {
+          width: 100% !important;
+        }
+
+        .content {
+          padding: 10px !important;
+        }
+
+        .header,
+        .footer {
+          text-align: center !important;
+          padding: 15px !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    "
+  >
+    <table
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      style="
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        border-collapse: collapse;
+        width: 100%;
+      "
+      bgcolor="#f4f4f4"
+    >
+      <tr>
+        <td
+          align="center"
+          style="
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+          "
+          bgcolor="#f4f4f4"
+        >
+          <!-- Email Container -->
+          <table
+            class="container"
+            cellpadding="0"
+            cellspacing="0"
+            style="
+              font-family: Arial, sans-serif;
+              padding: 0;
+              border-collapse: collapse;
+              margin: 0 auto;
+              width: 100%;
+              max-width: 600px;
+              background-color: #ffffff;
+            "
+            width="100%"
+            bgcolor="#ffffff"
+          >
+            <!-- Header -->
+            <tr>
+              <td
+                class="header"
+                style="
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  text-align: center;
+                  background-color: #77bc5c;
+                  padding: 20px;
+                  color: white;
+                "
+                align="center"
+                bgcolor="#007bff"
+              >
+                <img
+                  src="../assets/images/logo.svg"
+                  alt=""
+                />
+              </td>
+            </tr>
+
+            <!-- Body Content -->
+            <tr>
+              <td
+                class="content"
+                style="
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  background-color: #f4f4f4;
+                  padding: 20px;
+                "
+                bgcolor="#f4f4f4"
+              >
+                <h2 style="font-size: 16px; font-weight: 600">
+                  مرحبًا [اسم المستخدم]،
+                </h2>
+                <p style="font-size: 13px">
+                  لقد تلقينا طلبًا لإعادة تعيين كلمة المرور الخاصة بك. انقر على
+                  الرابط أدناه لإعداد كلمة مرور جديدة:
+                </p>
+
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    margin: 20px auto;
+                    background-color: #1f354f;
+                    color: #ffffff;
+                    display: block;
+                    width: fit-content;
+                    padding: 15px 30px;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    font-size: 14px;
+                  "
+                >
+                  أعادة تعين كلمة المرور
+                </a>
+                <p style="font-size: 13px">
+                  إذا لم تطلب هذا الإجراء، يرجى تجاهل هذا البريد الإلكتروني أو
+                  التواصل مع الدعم.
+                </p>
+                <p style="font-size: 13px; margin-top: 20x">
+                  مع أطيب التحيات، <br />
+                  فريق [اسم التطبيق]
+                </p>
+              </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+              <td
+                class="footer"
+                style="
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  text-align: center;
+                  background-color: #1f354f;
+                  padding: 10px;
+                  color: white;
+                  font-size: 12px;
+                "
+                align="center"
+                bgcolor="#333333"
+              >
+                <p>جميع الحقوق محفوظة © لمنصة أيتامنا 2024</p>
+              </td>
+            </tr>
+          </table>
+          <!-- End Email Container -->
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

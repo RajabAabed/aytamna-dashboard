@@ -163,6 +163,7 @@ function addfiles() {
 
 function updateBadges(selectid) {
   const select = document.getElementById(selectid);
+  console.log("efwf");
   if (!select) {
     return;
   }
