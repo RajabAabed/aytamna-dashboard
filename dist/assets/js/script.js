@@ -84,20 +84,20 @@ function closePopup(modalId) {
 }
 
 function addfiles() {
-  let fileList = []; // all images here
+  let fileList = []; // All images here
 
   const fileInput = document.getElementById("add-files");
   const fileInfoContainer = document.querySelector(".file-info-container");
+
   if (!fileInput) {
     return;
   }
-  fileInput.addEventListener("change", (event) => {
-    console.log("change");
-    const files = event.target.files;
-    fileList.push(...files);
-    fileInfoContainer.innerHTML = "";
 
-    for (const file of fileList) {
+  fileInput.addEventListener("change", (event) => {
+    const files = Array.from(event.target.files); // Convert file list to array
+    fileList.push(...files); // Add new files to the fileList array
+    fileInfoContainer.innerHTML = ""; // Clear previous content
+    fileList.forEach((file, index) => {
       const fileInfo = document.createElement("div");
       fileInfo.classList.add(
         "flex",
@@ -110,8 +110,9 @@ function addfiles() {
       );
 
       const fileThumbnail = document.createElement("img");
-      fileThumbnail.src = URL.createObjectURL(file);
-      fileThumbnail.classList.add("w-10", "h-10", "rounded-md", "object-cover");
+      fileThumbnail.src =
+        "https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg";
+      fileThumbnail.classList.add("w-10", "h-10", "rounded-md");
 
       const fileNameContainer = document.createElement("div");
       fileNameContainer.classList.add("mx-3", "flex-1");
@@ -148,6 +149,8 @@ function addfiles() {
       deleteButton.appendChild(deleteButtonImage);
 
       deleteButton.addEventListener("click", () => {
+        // Remove the file from the fileList array
+        fileList.splice(index, 1);
         fileInfo.remove();
       });
 
@@ -157,7 +160,7 @@ function addfiles() {
       fileInfo.appendChild(deleteButtonContainer);
 
       fileInfoContainer.appendChild(fileInfo);
-    }
+    });
   });
 }
 

@@ -14,7 +14,7 @@
     <!-- Css Files -->
     <link
       rel="stylesheet"
-      href="../assets/css/output.css"
+      href="../../assets/css/output.css"
     />
     <title>Aytamna Dashboard</title>
   </head>
@@ -39,7 +39,7 @@
           >
             <span class="sr-only">Toggle Navigation</span>
             <img
-              src="../assets/icons/menu.svg"
+              src="../../assets/icons/menu.svg"
               alt="menu Icon"
             />
           </button>
@@ -47,11 +47,11 @@
           <!-- Logo -->
           <a
             class="flex-auto rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
-            href="main.html"
+            href="../main.html"
             aria-label="aytamna"
           >
             <img
-              src="../assets/images/logo-dark.svg"
+              src="../../assets/images/logo-dark.svg"
               alt=""
               class="w-28"
             />
@@ -85,7 +85,7 @@
                 aria-label="Dropdown"
               >
                 <img
-                  src="../assets/icons/notification-bing.svg"
+                  src="../../assets/icons/notification-bing.svg"
                   alt=""
                 />
                 <span class="sr-only">Notifications</span>
@@ -184,7 +184,7 @@
                     onclick="openPopup('logout-modal')"
                   >
                     <img
-                      src="../assets/icons/logout.svg"
+                      src="../../assets/icons/logout.svg"
                       alt="logout-icon"
                     />
                     تسجيل الخروج
@@ -214,11 +214,11 @@
             <!-- Logo -->
             <a
               class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
-              href="main.html"
+              href="../main.html"
               aria-label="aytamna"
             >
               <img
-                src="../assets/images/logo.svg"
+                src="../../assets/images/logo.svg"
                 alt=""
                 class="w-28"
               />
@@ -237,11 +237,11 @@
               <ul class="flex flex-col space-y-2">
                 <li>
                   <a
-                    class="asideItem activeAsideItem"
-                    href="main.html"
+                    class="asideItem"
+                    href="../main.html"
                   >
                     <img
-                      src="../assets/icons/home.svg"
+                      src="../../assets/icons/home.svg"
                       alt="home Icon"
                       class=""
                     />
@@ -251,10 +251,10 @@
                 <li>
                   <a
                     class="asideItem"
-                    href="partnerRequest/partnerRequest.html"
+                    href="partnerRequest.html"
                   >
                     <img
-                      src="../assets/icons/hand.svg"
+                      src="../../assets/icons/hand.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -264,10 +264,10 @@
                 <li>
                   <a
                     class="asideItem"
-                    href="currentpartner/currentPartner.html"
+                    href="../currentpartner/currentPartner.html"
                   >
                     <img
-                      src="../assets/icons/menu-board.svg"
+                      src="../../assets/icons/menu-board.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -277,10 +277,10 @@
                 <li>
                   <a
                     class="asideItem"
-                    href="managmentCard/managmentCard.html"
+                    href="../managmentCard/managmentCard.html"
                   >
                     <img
-                      src="../assets/icons/wallet-add.svg"
+                      src="../../assets/icons/wallet-add.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -290,10 +290,10 @@
                 <li>
                   <a
                     class="asideItem"
-                    href="issuedCard/issuedCard.html"
+                    href="../issuedCard/issuedCard.html"
                   >
                     <img
-                      src="../assets/icons/personalcard.svg"
+                      src="../../assets/icons/personalcard.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -302,11 +302,11 @@
                 </li>
                 <li>
                   <a
-                    class="asideItem"
-                    href="template/index.html"
+                    class="asideItem activeAsideItem"
+                    href="../template/index.html"
                   >
                     <img
-                      src="../assets/icons/close-circle.svg"
+                      src="../../assets/icons/close-circle.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -316,10 +316,10 @@
                 <li>
                   <a
                     class="asideItem"
-                    href="notification/notification.html"
+                    href="../notification/notification.html"
                   >
                     <img
-                      src="../assets/icons/notification-bing-w.svg"
+                      src="../../assets/icons/notification-bing-w.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -329,10 +329,10 @@
                 <li>
                   <a
                     class="asideItem"
-                    href="settings/setting.html"
+                    href="../settings/setting.html"
                   >
                     <img
-                      src="../assets/icons/setting-2.svg"
+                      src="../../assets/icons/setting-2.svg"
                       alt="hand Icon"
                       class=""
                     />
@@ -350,7 +350,7 @@
               onclick="openPopup('logout-modal')"
             >
               <img
-                src="../assets/icons/logout.svg"
+                src="../../assets/icons/logout.svg"
                 alt="logout Icon"
                 class=""
               />
@@ -366,7 +366,137 @@
         <div class="p-4 sm:p-6 space-y-4 sm:space-y-6">
           <div
             class="p-4 sm:p-6 bg-white rounded-lg shadow-dasboard lg:min-h-[81vh] min-h-[80vh]"
-          ></div>
+          >
+            <!-- Breadcrumb -->
+            <nav
+              class="Breadcrumb"
+              aria-label="Breadcrumb"
+            >
+              <ol
+                role="list"
+                class="flex items-center"
+              >
+                <li>
+                  <div class="flex items-center">
+                    <a
+                      href="../main.html"
+                      class="breadcrumbLink"
+                      >الرئيسية</a
+                    >
+                  </div>
+                </li>
+
+                <li>
+                  <div class="flex items-center">
+                    <svg
+                      class="h-5 w-5 flex-shrink-0 text-black"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      aria-hidden="true"
+                    >
+                      <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                    </svg>
+                    <a
+                      href="index.html"
+                      class="breadcrumbLink"
+                      aria-current="page"
+                    >
+                      قوالب اسباب الرفض
+                    </a>
+                  </div>
+                </li>
+              </ol>
+              <div>
+                <button
+                  class="btn-primary"
+                  onclick="openPopup('add-template-modal')"
+                >
+                  + اضافة قالب جديد
+                </button>
+              </div>
+            </nav>
+            <!-- End Breadcrumb -->
+            <div class="mt-5">
+              <div class="-m-1.5 overflow-x-auto">
+                <div class="p-1.5 min-w-full inline-block align-middle">
+                  <div class="overflow-hidden">
+                    <table class="min-w-full divide-y divide-[#F5F5F5]">
+                      <thead>
+                        <tr>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            #
+                          </th>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            عنوان الرفض
+                          </th>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            تفاصيل سبب الرفض
+                          </th>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            الاحداث
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="divide-y divide-[#F5F5F5]">
+                        <tr class="odd:bg-grey-300">
+                          <td class="tableBodyItem">
+                            <p>001</p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <p>سبب الرفض الاول</p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <p>
+                              تفاصيل السبب .. تفاصيل السبب .. تفاصيل السبب ..
+                              تفاصيل السبب .. تفاصيل السبب .. تفاصيل السبب ..
+                              تفاصيل السبب .. تفاصيل السبب .. تفاصيل السبب ..
+                              تفاصيل السبب .. تفاصيل السبب .. تفاصيل السبب ..
+                            </p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <a
+                              href="requestCard.html"
+                              class="mx-1.5"
+                            >
+                              <img
+                                src="../../assets/icons/edit-2.svg"
+                                alt="eye"
+                                class="inline"
+                              />
+                              تعديل
+                            </a>
+                            <button
+                              class="mx-1.5"
+                              onclick="openPopup('delete-modal')"
+                            >
+                              <img
+                                src="../../assets/icons/trash.svg"
+                                alt="eye"
+                                class="inline"
+                              />
+                              حذف
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- End Content -->
@@ -386,6 +516,92 @@
         </div>
       </div>
     </footer>
+
+    <!-- add popup -->
+    <div
+      class="relative z-10 hidden popup"
+      id="add-template-modal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div
+        class="fixed inset-0 bg-gray-200 bg-opacity-75 transition-opacity"
+        aria-hidden="true"
+      ></div>
+
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-center justify-center text-center sm:items-center sm:p-0"
+        >
+          <div
+            class="relative transform overflow-hidden rounded-lg shadow-modal bg-white text-right transition-all sm:w-full sm:max-w-lg sm:my-8"
+          >
+            <div
+              class="w-full bg-secondary-100 px-4 pb-4 pt-5 sm:p-6 flex justify-between items-center"
+            >
+              <h3 class="text-subTitle text-primary-900 font-IBM font-bold">
+                اضافة سبب رفض جديد
+              </h3>
+              <button
+                class=""
+                onclick="closePopup('add-template-modal')"
+              >
+                <img
+                  src="../../assets/icons/close.svg"
+                  alt="close"
+                />
+              </button>
+            </div>
+
+            <div class="px-4 pb-4 pt-5 sm:p-6 w-full">
+              <form
+                action=""
+                method="post"
+              >
+                <div class="grid grid-cols-1 gap-x-6 gap-y-5 sm:grid-cols-6">
+                  <div class="sm:col-span-6">
+                    <label
+                      for="title-reject"
+                      class="label mb-2"
+                    >
+                      عنوان الرفض
+                    </label>
+                    <input
+                      name="title-reject"
+                      id="title-reject"
+                      class="input"
+                    />
+                  </div>
+                  <div class="sm:col-span-6">
+                    <label
+                      for="details-reject"
+                      class="label mb-2"
+                    >
+                      تفاصيل سبب الرفض
+                    </label>
+                    <textarea
+                      name="details-reject"
+                      id="details-reject"
+                      class="input"
+                      rows="5"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="mt-5">
+                  <button
+                    class="btn-primary block w-full"
+                    type="submit"
+                  >
+                    اضافة
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Logout popup -->
     <div
@@ -411,7 +627,7 @@
                 class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-danger-100"
               >
                 <img
-                  src="../assets/icons/logout-red.svg"
+                  src="../../assets/icons/logout-red.svg"
                   alt="lock"
                   class=""
                 />
@@ -454,8 +670,8 @@
     </div>
 
     <!-- preline JS  -->
-    <script src="../assets/js/preline.min.js"></script>
+    <script src="../../assets/js/preline.min.js"></script>
     <!-- Custom JS -->
-    <script src="../assets/js/script.js"></script>
+    <script src="../../assets/js/script.js"></script>
   </body>
 </html>
