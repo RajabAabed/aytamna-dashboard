@@ -832,13 +832,6 @@ body {
   background-color: rgb(199 233 241 / var(--tw-bg-opacity));
 }
 
-<<<<<<< HEAD
-.alert {
-  position: absolute;
-  top: 1.25rem;
-  left: 1.25rem;
-  z-index: 50;
-=======
 .pagination-item {
   position: relative;
   display: none;
@@ -893,7 +886,6 @@ body {
 .select-input {
   background-position: left 0.5rem center;
   padding-left: 2.5rem;
->>>>>>> b1b0022027cac0046cb5da161c21091b1a259d65
 }
 
 .container {
@@ -1834,20 +1826,9 @@ body {
   margin: -0.375rem;
 }
 
-<<<<<<< HEAD
-.-mx-1\.5 {
-  margin-left: -0.375rem;
-  margin-right: -0.375rem;
-}
-
-.-my-1\.5 {
-  margin-top: -0.375rem;
-  margin-bottom: -0.375rem;
-=======
 .mx-1\.5 {
   margin-left: 0.375rem;
   margin-right: 0.375rem;
->>>>>>> b1b0022027cac0046cb5da161c21091b1a259d65
 }
 
 .mx-2 {
@@ -1905,14 +1886,6 @@ body {
 
 .me-5 {
   margin-inline-end: 1.25rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
-.ml-auto {
-  margin-left: auto;
 }
 
 .mr-2 {
@@ -2187,14 +2160,6 @@ body {
 
 .max-w-\[300px\] {
   max-width: 300px;
-}
-
-.max-w-\[550PX\] {
-  max-width: 550PX;
-}
-
-.max-w-\[550px\] {
-  max-width: 550px;
 }
 
 .max-w-full {
@@ -2514,13 +2479,8 @@ body {
   border-inline-end-width: 1px;
 }
 
-<<<<<<< HEAD
-.border-s-4 {
-  border-inline-start-width: 4px;
-=======
 .border-t {
   border-top-width: 1px;
->>>>>>> b1b0022027cac0046cb5da161c21091b1a259d65
 }
 
 .border-solid {
@@ -2536,24 +2496,13 @@ body {
   border-color: rgb(229 231 235 / var(--tw-border-opacity)) !important;
 }
 
-<<<<<<< HEAD
-.border-alert-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(235 160 0 / var(--tw-border-opacity));
-=======
 .border-\[\#DBDADA\] {
   --tw-border-opacity: 1;
   border-color: rgb(219 218 218 / var(--tw-border-opacity));
->>>>>>> b1b0022027cac0046cb5da161c21091b1a259d65
 }
 
 .border-current {
   border-color: currentColor;
-}
-
-.border-danger-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(212 8 8 / var(--tw-border-opacity));
 }
 
 .border-gray-200 {
@@ -2574,16 +2523,6 @@ body {
 .border-grey-400 {
   --tw-border-opacity: 1;
   border-color: rgb(243 242 242 / var(--tw-border-opacity));
-}
-
-.border-primary-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(34 59 88 / var(--tw-border-opacity));
-}
-
-.border-success-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(65 144 0 / var(--tw-border-opacity));
 }
 
 .border-transparent {
@@ -3019,16 +2958,6 @@ body {
   text-transform: lowercase;
 }
 
-<<<<<<< HEAD
-.text-alert-400 {
-  --tw-text-opacity: 1;
-  color: rgb(235 160 0 / var(--tw-text-opacity));
-}
-
-.text-alert-500 {
-  --tw-text-opacity: 1;
-  color: rgb(212 144 0 / var(--tw-text-opacity));
-=======
 .tracking-wide {
   letter-spacing: 0.025em;
 }
@@ -3036,7 +2965,6 @@ body {
 .text-\[\#32ADE6\] {
   --tw-text-opacity: 1;
   color: rgb(50 173 230 / var(--tw-text-opacity));
->>>>>>> b1b0022027cac0046cb5da161c21091b1a259d65
 }
 
 .text-black {
@@ -3059,15 +2987,9 @@ body {
   color: rgb(212 8 8 / var(--tw-text-opacity));
 }
 
-<<<<<<< HEAD
-.text-danger-500 {
-  --tw-text-opacity: 1;
-  color: rgb(191 7 7 / var(--tw-text-opacity));
-=======
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
->>>>>>> b1b0022027cac0046cb5da161c21091b1a259d65
 }
 
 .text-gray-500 {
@@ -3105,11 +3027,6 @@ body {
   color: rgb(34 59 88 / var(--tw-text-opacity));
 }
 
-.text-primary-500 {
-  --tw-text-opacity: 1;
-  color: rgb(31 53 79 / var(--tw-text-opacity));
-}
-
 .text-primary-800 {
   --tw-text-opacity: 1;
   color: rgb(20 35 53 / var(--tw-text-opacity));
@@ -3128,16 +3045,6 @@ body {
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
-}
-
-.text-success-400 {
-  --tw-text-opacity: 1;
-  color: rgb(65 144 0 / var(--tw-text-opacity));
-}
-
-.text-success-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 0 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -3303,10 +3210,6 @@ body {
   font-family: "IBM Plex Sans Arabic";
 
   src: url("../fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Bold.ttf");
-<<<<<<< HEAD
-
-  font-weight: 700;
-=======
 
   font-weight: 700;
 }
@@ -3314,7 +3217,6 @@ body {
 .odd\:bg-grey-300:nth-child(odd) {
   --tw-bg-opacity: 1;
   background-color: rgb(251 251 251 / var(--tw-bg-opacity));
->>>>>>> b1b0022027cac0046cb5da161c21091b1a259d65
 }
 
 .focus-within\:outline-none:focus-within {
@@ -3432,10 +3334,6 @@ body {
 .focus\:ring-grey-200:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(253 253 253 / var(--tw-ring-opacity));
-}
-
-.focus\:ring-offset-2:focus {
-  --tw-ring-offset-width: 2px;
 }
 
 .disabled\:pointer-events-none:disabled {
