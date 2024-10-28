@@ -214,7 +214,7 @@
             <!-- Logo -->
             <a
               class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
-              href="main.html"
+              href="../main.html"
               aria-label="aytamna"
             >
               <img
@@ -251,59 +251,72 @@
                 <li>
                   <a
                     class="asideItem"
-                    href="../Beneficiary Management/beneficiary-management.html"
-                  >
-                    <img
-                      src="../../assets/icons/profile-2user.svg"
-                      alt="hand Icon"
-                      class=""
-                    />
-                    إدارة المستفيدين
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="asideItem"
-                    href="../Partner Management/Partner-Management.html"
+                    href="../partner/addNewPartner.html"
                   >
                     <img
                       src="../../assets/icons/hand.svg"
                       alt="hand Icon"
                       class=""
                     />
-                    إدارة الشركاء
+                    تقديم طلب شراكة
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem activeAsideItem"
+                    href="../managmentPartner/index.html"
+                  >
+                    <img
+                      src="../../assets/icons/category.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    إدارة أصناف الشريك
                   </a>
                 </li>
                 <li>
                   <a
                     class="asideItem"
-                    href="../Ads Management/Ads-Management.html"
+                    href="../card/managmentCards.html"
+                  >
+                    <img
+                      src="../../assets/icons/wallet-add.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    ادارة بطاقات الخصم
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="../information/managmentInfo.html"
+                  >
+                    <img
+                      src="../../assets/icons/user-edit.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    إدارة معلوماتك
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="ads.html"
                   >
                     <img
                       src="../../assets/icons/Ads-click.svg"
                       alt="hand Icon"
                       class=""
                     />
-                    إدارة الإعلانات الترويجية
+                    الإعلانات الترويجية
                   </a>
                 </li>
                 <li>
                   <a
                     class="asideItem"
-                    href="../Partnership Requests/Partnership-Requests.html"
-                  >
-                    <img
-                      src="../../assets/icons/menu-board.svg"
-                      alt="hand Icon"
-                      class=""
-                    />
-                    طلبات الشراكة
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="asideItem activeAsideItem"
-                    href="Notifications.html"
+                    href="#"
                   >
                     <img
                       src="../../assets/icons/notification-bing-w.svg"
@@ -370,173 +383,87 @@
                       <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
                     </svg>
                     <a
-                      href="Notifications.html"
+                      href="index.html"
                       class="breadcrumbLink"
                       aria-current="page"
                     >
-                      إرسال الاشعارات
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex items-center">
-                    <svg
-                      class="h-5 w-5 flex-shrink-0 text-black"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      aria-hidden="true"
-                    >
-                      <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
-                    </svg>
-                    <a
-                      href="send-notification.html"
-                      class="breadcrumbLink"
-                      aria-current="page"
-                    >
-                      إرسال اشعار جديد
+                      إدارة أصناف الشريك
                     </a>
                   </div>
                 </li>
               </ol>
-              <div></div>
+              <div>
+                <button
+                  onclick="openPopup('new-add-modal')"
+                  class="btn-primary inline-block"
+                >
+                  + اضافة صنف جديد
+                </button>
+              </div>
             </nav>
             <!-- End Breadcrumb -->
             <div class="mt-5">
-              <div>
-                <form
-                  action=""
-                  method="post"
-                >
-                  <div
-                    class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"
-                  >
-                    <div class="sm:col-span-3">
-                      <label
-                        for="notification-title"
-                        class="label"
-                        >عنوان الاشعار
-                      </label>
-                      <div class="mt-2">
-                        <input
-                          type="text"
-                          name="notification-title"
-                          id="notification-title"
-                          class="input"
-                        />
-                      </div>
-                    </div>
-                    <div class="sm:col-span-3">
-                      <label
-                        for="recipients"
-                        class="label"
-                        >المستلمون</label
-                      >
-                      <div class="mt-2">
-                        <select
-                          id="recipients"
-                          name="recipients"
-                          class="select-input py-4"
-                        >
-                          <option
-                            class="select-option"
-                            selected
-                            disabled
-                          >
-                            الشركاء / المستفيدين / الجميع
-                          </option>
-                          <option class="select-option">United States</option>
-                          <option class="select-option">Canada</option>
-                          <option class="select-option">Mexico</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="sm:col-span-3">
-                      <label
-                        for="notification-type"
-                        class="label"
-                        >نواع الاشعار</label
-                      >
-                      <div class="mt-2">
-                        <select
-                          id="notification-type"
-                          name="notification-type"
-                          class="select-input py-4"
-                        >
-                          <option
-                            class="select-option"
-                            selected
-                            disabled
-                          >
-                            نواع الاشعار
-                          </option>
-                          <option class="select-option">United States</option>
-                          <option class="select-option">Canada</option>
-                          <option class="select-option">Mexico</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="sm:col-span-3">
-                      <label
-                        for="target-group"
-                        class="label"
-                        >الفئة المستهدفة</label
-                      >
-                      <div class="mt-2">
-                        <select
-                          id="target-group"
-                          name="target-group"
-                          class="select-input py-4"
-                        >
-                          <option
-                            class="select-option"
-                            selected
-                            disabled
-                          >
-                            نواع الاشعار
-                          </option>
-                          <option class="select-option">United States</option>
-                          <option class="select-option">Canada</option>
-                          <option class="select-option">Mexico</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="sm:col-span-6">
-                      <label
-                        for="notification-content"
-                        class="label"
-                      >
-                        محتوى الاشعار
-                      </label>
-                      <div class="mt-2">
-                        <textarea
-                          id="notification-content"
-                          name="notification-content"
-                          rows="6"
-                          class="input"
-                        ></textarea>
+              <div class="mt-3">
+                <p class="text-subTitle font-bold font-IBM text-black">
+                  قائمة الأصناف السابقة
+                </p>
+                <div class="flex flex-col mt-3">
+                  <div class="-m-1.5 overflow-x-auto">
+                    <div class="p-1.5 min-w-full inline-block align-middle">
+                      <div class="border rounded-lg overflow-hidden">
+                        <table class="min-w-full divide-y divide-[#F5F5F5]">
+                          <thead>
+                            <tr>
+                              <th
+                                scope="col"
+                                class="tableHeadItem"
+                              >
+                                اسم الصنف
+                              </th>
+
+                              <th
+                                scope="col"
+                                class="tableHeadItem text-end"
+                              >
+                                الاجراءات
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody class="divide-y divide-[#F5F5F5]">
+                            <tr>
+                              <td class="tableBodyItem">الصنف الاول</td>
+
+                              <td class="tableBodyItem text-end">
+                                <a
+                                  href="requestCard.html"
+                                  class="mx-1.5"
+                                >
+                                  <img
+                                    src="../../assets/icons/edit-2.svg"
+                                    alt="eye"
+                                    class="inline"
+                                  />
+                                  تعديل
+                                </a>
+                                <button
+                                  class="mx-1.5"
+                                  onclick="openPopup('delete-modal')"
+                                >
+                                  <img
+                                    src="../../assets/icons/trash.svg"
+                                    alt="eye"
+                                    class="inline"
+                                  />
+                                  حذف
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
-                  <div class="flex justify-end items-center mt-5">
-                    <button
-                      class="btn-primary flex items-center justify-center gap-3 mx-2"
-                      type="submit"
-                    >
-                      <span>
-                        <img
-                          src="../../assets/icons/notification-bing-outline.svg"
-                          alt=""
-                      /></span>
-                      ارسال الاشعار
-                    </button>
-                    <button
-                      class="btn-primary-secondary mx-2"
-                      type="button"
-                    >
-                      حفظ كمسودة
-                    </button>
-                  </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>
@@ -559,6 +486,139 @@
         </div>
       </div>
     </footer>
+
+    <!-- add popup -->
+    <div
+      class="relative z-10 hidden popup"
+      id="new-add-modal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div
+        class="fixed inset-0 bg-gray-200 bg-opacity-75 transition-opacity"
+        aria-hidden="true"
+      ></div>
+
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-center justify-center text-center sm:items-center sm:p-0"
+        >
+          <div
+            class="relative transform overflow-hidden rounded-lg shadow-modal bg-white text-right transition-all sm:w-full sm:max-w-lg sm:my-8"
+          >
+            <div
+              class="w-full bg-secondary-100 px-4 pb-4 pt-5 sm:p-6 flex justify-between items-center"
+            >
+              <h3 class="text-subTitle text-primary-900 font-IBM font-bold">
+                اضافة صنف جديد
+              </h3>
+              <button
+                class=""
+                onclick="closePopup('new-add-modal')"
+              >
+                <img
+                  src="../../assets/icons/close.svg"
+                  alt="close"
+                />
+              </button>
+            </div>
+
+            <div class="px-4 pb-4 pt-5 sm:p-6 w-full">
+              <form
+                action=""
+                method="post"
+              >
+                <div class="grid grid-cols-1 gap-x-6 gap-y-5 sm:grid-cols-6">
+                  <div class="sm:col-span-6">
+                    <label
+                      for="reason"
+                      class="label mb-2"
+                    >
+                      عنوان الصنف
+                    </label>
+                    <input
+                      name="reason"
+                      id="reason"
+                      class="input"
+                    />
+                  </div>
+                </div>
+
+                <div class="mt-5">
+                  <button
+                    class="btn-primary block w-full"
+                    type="submit"
+                  >
+                    اضافة
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- delete popup -->
+    <div
+      class="relative z-10 hidden popup"
+      id="delete-modal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div
+        class="fixed inset-0 bg-gray-200 bg-opacity-75 transition-opacity"
+        aria-hidden="true"
+      ></div>
+
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0"
+        >
+          <div
+            class="relative transform overflow-hidden rounded-lg shadow-modal bg-white px-4 pb-4 pt-5 text-left transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6"
+          >
+            <div>
+              <div
+                class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-danger-100"
+              >
+                <img
+                  src="../../assets/icons/trash.svg"
+                  alt="lock"
+                  class="w-14"
+                />
+              </div>
+              <div class="mt-3 text-center sm:mt-5">
+                <h3
+                  class="text-title font-bold text-black font-IBM"
+                  id="modal-title"
+                >
+                  هل انت متاكد من حذف هذا الصنف؟ “الصنف الاول”
+                </h3>
+              </div>
+            </div>
+            <div class="mt-5 sm:mt-6">
+              <button
+                type="button"
+                class="btn-danger w-full"
+              >
+                نعم، احذف الصنف
+              </button>
+
+              <div class="mt-3">
+                <button
+                  type="button"
+                  class="btn-danger-secondary w-full"
+                  onclick="closePopup('delete-modal')"
+                >
+                  تراجع
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Logout popup -->
     <div
