@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html
+  lang="ar"
+  dir="rtl"
+  class="light"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <!-- Css Files -->
+    <link
+      rel="stylesheet"
+      href="../assets/css/output.css"
+    />
+
+    <style>
+      @media print {
+        body {
+          background-color: white !important;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        #printableDiv {
+          width: 480px;
+          height: auto;
+          margin: 0 auto;
+        }
+      }
+    </style>
+    <title>Aytamna Dashboard</title>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-gray-100">
+    <!-- Printable Card -->
+    <div class="card-view w-full">
+      <div
+        id="printableDiv"
+        class="max-w-max mx-auto relative bg-white p-4 rounded-md shadow-lg"
+      >
+        <!-- Card Template Image -->
+        <img
+          src="../assets/images/cardtemplate.png"
+          alt=""
+          class="w-[480px] md:h-auto h-[280px] rounded-md"
+        />
+        <!-- QR Code -->
+        <img
+          class="card-qr-code absolute top-5 left-5 lg:w-36 lg:h-36 w-24 h-24 object-contain"
+          src="../assets/icons/qr.svg"
+          alt="qr code"
+        />
+        <!-- Beneficiary Info -->
+        <div
+          class="card-info space-y-2 absolute top-5 right-5 font-IBM text-body"
+        >
+          <h5 class="text-white">اسم المستفيد</h5>
+          <p class="font-bold text-white">ملك حماد</p>
+          <h5 class="text-white">رقم المستفيد</h5>
+          <p class="font-bold text-white">12345678</p>
+          <h5 class="text-white">نسبة الخصم</h5>
+          <p class="card-percentage font-bold text-white">20%</p>
+        </div>
+        <!-- SCOA Logo -->
+        <div class="absolute bottom-5 right-5">
+          <img
+            src="../assets/images/scoa-logo.png"
+            alt="scoa-logo"
+            class="lg:w-52 w-40 rounded-md"
+          />
+        </div>
+        <!-- Market Logo -->
+        <div class="absolute bottom-5 left-5 market-logo">
+          <img
+            src=""
+            alt="market-logo"
+            class="w-28 hidden"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- preline JS  -->
+    <script src="../assets/js/preline.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
