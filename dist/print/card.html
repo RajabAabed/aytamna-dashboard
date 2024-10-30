@@ -10,13 +10,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-
-    <!-- Css Files -->
-    <link
-      rel="stylesheet"
-      href="../assets/css/output.css"
-    />
-
+    <title>Aytamna Dashboard</title>
     <style>
       @media print {
         body {
@@ -31,58 +25,108 @@
         }
       }
     </style>
-    <title>Aytamna Dashboard</title>
   </head>
-  <body class="flex justify-center items-center mt-5 bg-gray-100">
+
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      background-color: #f3f4f6;
+    "
+  >
     <!-- Printable Card -->
-    <div class="card-view w-full">
+    <div style="width: 100%">
       <div
         id="printableDiv"
-        class="max-w-max mx-auto relative bg-white p-4 rounded-md shadow-lg"
+        style="
+          max-width: max-content;
+          margin: 0 auto;
+          position: relative;
+          background-color: white;
+          padding: 16px;
+          border-radius: 8px;
+          box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+        "
       >
         <!-- Card Template Image -->
         <img
           src="../assets/images/cardtemplate.png"
           alt=""
-          class="w-[480px] md:h-auto h-[280px] rounded-md"
+          style="
+            width: 480px;
+            height: auto;
+            max-height: 280px;
+            border-radius: 8px;
+          "
         />
         <!-- QR Code -->
         <img
-          class="card-qr-code absolute top-5 left-5 lg:w-36 lg:h-36 w-24 h-24 object-contain"
+          class="card-qr-code"
           src="../assets/icons/qr.svg"
           alt="qr code"
+          style="
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 96px;
+            height: 96px;
+            object-fit: contain;
+            padding: 10px;
+          "
         />
         <!-- Beneficiary Info -->
         <div
-          class="card-info space-y-2 absolute top-5 right-5 font-IBM text-body"
+          style="
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            color: white;
+            line-height: 1.5;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+          "
         >
-          <h5 class="text-white">اسم المستفيد</h5>
-          <p class="font-bold text-white">ملك حماد</p>
-          <h5 class="text-white">رقم المستفيد</h5>
-          <p class="font-bold text-white">12345678</p>
-          <h5 class="text-white">نسبة الخصم</h5>
-          <p class="card-percentage font-bold text-white">20%</p>
+          <div>
+            <h5 style="color: white; margin: 0">اسم المستفيد</h5>
+            <p style="font-weight: bold; color: white; margin: 0">ملك حماد</p>
+          </div>
+          <div>
+            <h5 style="color: white; margin: 0">رقم المستفيد</h5>
+            <p style="font-weight: bold; color: white; margin: 0">12345678</p>
+          </div>
+          <div>
+            <h5 style="color: white; margin: 0">نسبة الخصم</h5>
+            <p style="font-weight: bold; color: white; margin: 0">20%</p>
+          </div>
         </div>
         <!-- SCOA Logo -->
-        <div class="absolute bottom-5 right-5">
+        <div style="position: absolute; bottom: 20px; right: 20px">
           <img
             src="../assets/images/scoa-logo.png"
             alt="scoa-logo"
-            class="lg:w-52 w-40 rounded-md"
+            style="width: 208px; border-radius: 8px; padding: 10px"
           />
         </div>
         <!-- Market Logo -->
-        <div class="absolute bottom-5 left-5 market-logo">
+        <div
+          class="market-logo"
+          style="position: absolute; bottom: 20px; left: 20px; padding: 10px"
+        >
           <img
             src=""
             alt="market-logo"
-            class="w-28 hidden"
+            style="width: 112px; display: none"
           />
         </div>
       </div>
     </div>
 
-    <!-- preline JS  -->
+    <!-- preline JS -->
     <script src="../assets/js/preline.min.js"></script>
     <!-- Custom JS -->
     <script src="../assets/js/script.js"></script>
