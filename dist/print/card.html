@@ -1,134 +1,104 @@
 <!DOCTYPE html>
-<html
-  lang="ar"
-  dir="rtl"
-  class="light"
->
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Aytamna Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بطاقة المستفيد</title>
     <style>
-      @media print {
-        body {
-          background-color: white !important;
-          -webkit-print-color-adjust: exact;
-          print-color-adjust: exact;
-        }
-        #printableDiv {
-          width: 480px;
-          height: auto;
-          margin: 0 auto;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .card {
+        width: 600px;
+        background-color: #1e7f75;
+        color: white;
+        border-end-start-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+        border-start-end-radius: 10px;
+        border-start-start-radius: 10px;
+        border-end-end-radius: 10px;
+        border-end-start-radius: 10px;
+        overflow: hidden;
+      }
+      .card input {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        border: none;
+        border-radius: 5px;
+        background-color: #ffffff62;
+      }
+      .logo {
+        text-align: left;
+        margin-top: 20px;
+        font-size: 12px;
+        width: 40%;
+      }
+      .logo img {
+        width: 100%;
+      }
+      .validity {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+      .card-header {
+        display: flex;
+        justify-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .lable {
+        width: 40%;
+      }
+      .qr-code {
+        width: 40%;
+        text-align: end;
+      }
+      .card-footer {
+        background-color: #fff;
+        color: #1e7f75;
+        padding: 10px;
+        display: flex;
+        border-end-end-radius: 10px;
+        border-end-start-radius: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
       }
     </style>
   </head>
-
-  <body
-    style="
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-      background-color: #f3f4f6;
-    "
-  >
-    <!-- Printable Card -->
-    <div style="width: 100%">
-      <div
-        id="printableDiv"
-        style="
-          max-width: max-content;
-          margin: 0 auto;
-          position: relative;
-          background-color: white;
-          padding: 16px;
-          border-radius: 8px;
-          box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-        "
-      >
-        <!-- Card Template Image -->
-        <img
-          src="../assets/images/cardtemplate.png"
-          alt=""
-          style="
-            width: 480px;
-            height: auto;
-            max-height: 280px;
-            border-radius: 8px;
-          "
-        />
-        <!-- QR Code -->
-        <img
-          class="card-qr-code"
-          src="../assets/icons/qr.svg"
-          alt="qr code"
-          style="
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 96px;
-            height: 96px;
-            object-fit: contain;
-            padding: 10px;
-          "
-        />
-        <!-- Beneficiary Info -->
-        <div
-          style="
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-family: 'IBM Plex Sans', sans-serif;
-            color: white;
-            line-height: 1.5;
-            gap: 10px;
-            display: flex;
-            flex-direction: column;
-            padding: 10px;
-          "
-        >
-          <div>
-            <h5 style="color: white; margin: 0">اسم المستفيد</h5>
-            <p style="font-weight: bold; color: white; margin: 0">ملك حماد</p>
-          </div>
-          <div>
-            <h5 style="color: white; margin: 0">رقم المستفيد</h5>
-            <p style="font-weight: bold; color: white; margin: 0">12345678</p>
-          </div>
-          <div>
-            <h5 style="color: white; margin: 0">نسبة الخصم</h5>
-            <p style="font-weight: bold; color: white; margin: 0">20%</p>
-          </div>
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <div class="lable">
+          <label>اسم المستفيد:</label>
+          <input type="text" placeholder="" readonly />
+          <label>رقم الهوية:</label>
+          <input type="text" placeholder="" readonly />
+          <label>رقم المستفيد:</label>
+          <input type="text" placeholder="" readonly />
+          <label>تاريخ الإصدار:</label>
+          <input type="text" placeholder="" readonly />
+          <label>اسم الجمعية:</label>
+          <input type="text" placeholder="" readonly />
         </div>
-        <!-- SCOA Logo -->
-        <div style="position: absolute; bottom: 20px; right: 20px">
-          <img
-            src="../assets/images/scoa-logo.png"
-            alt="scoa-logo"
-            style="width: 208px; border-radius: 8px; padding: 10px"
-          />
+        <div class="qr-code">Code</div>
+      </div>
+      <div class="card-footer">
+        <div class="logo">
+          <img src="../assets/images/scfoa-logo.jpeg" alt="" />
         </div>
-        <!-- Market Logo -->
-        <div
-          class="market-logo"
-          style="position: absolute; bottom: 20px; left: 20px; padding: 10px"
-        >
-          <img
-            src=""
-            alt="market-logo"
-            style="width: 112px; display: none"
-          />
-        </div>
+        <div class="validity">هذه البطاقة صالحة لمدة عام</div>
       </div>
     </div>
-
-    <!-- preline JS -->
-    <script src="../assets/js/preline.min.js"></script>
-    <!-- Custom JS -->
-    <script src="../assets/js/script.js"></script>
   </body>
 </html>
